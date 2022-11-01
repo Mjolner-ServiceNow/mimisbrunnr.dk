@@ -1,0 +1,43 @@
+# main links
+main:
+  - title: "Automation App"
+    url: /automation-app/
+  - title: "Fedback App"
+    url: /feedback-app/
+
+aa:
+  - title: "Initial Setup"
+    children:
+      - title: "Microsoft Azure Setup"
+        url: /automation-app/azure-setup/
+      - title: "ServiceNow Setup"
+        url: /automation-app/servicenow-setup/
+
+
+  - title: "Automating"
+    children:
+      - title: "Runbooks"
+        url: /automation-app/runbooks/
+      - title: "Templates"
+        url: /automation-app/templates/
+      - title: "Variables"
+        url: /automation-app/variables/
+      - title: "Credentials"
+        url: /automation-app/credentials/
+      - title: "Flow Designer"
+        url: /automation-app/flow-designer/
+      - title: "Workflow"
+        url: /automation-app/workflow/
+      - title: "Reporting"
+        url: /automation-app/reporting/
+
+  - title: "Upgrading"
+    children:
+      - title: "Instructions"
+        url: /automation-app/upgrade-instructions/
+      - title: "Changelog"
+        url: /automation-app/changelog/
+
+  - title: "Tutorials"
+
+  - title: "Use cases"
