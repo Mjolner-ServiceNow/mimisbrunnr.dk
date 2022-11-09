@@ -39,5 +39,8 @@ aa:
         url: /automation-app/changelog/
 
   - title: "Tutorials"
+    children:
+      - title: "Microsoft Azure DevOps"
+        url: /automation-app/azure-devops-integration/
 
   - title: "Use cases"
