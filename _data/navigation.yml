@@ -4,6 +4,8 @@ main:
     url: /automation-app/
   - title: "Fedback App"
     url: /feedback-app/
+  - title: "Rights Management App"
+    url: /rights-management-app/
 
 aa:
   - title: "Initial Setup"
@@ -44,3 +46,16 @@ aa:
         url: /automation-app/azure-devops-integration/
 
   - title: "Use cases"
+
+
+rma:
+  - title: "Initial Setup"
+    children:
+      - title: "Microsoft Azure Setup"
+        url: /rights-management-app/azure-setup/
+      - title: "ServiceNow Setup"
+        url: /rights-management-app/servicenow-setup/
+
+
+  - title: "Functionality"
+  
