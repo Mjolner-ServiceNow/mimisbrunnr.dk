@@ -2,7 +2,7 @@
 main:
   - title: "Automation App"
     url: /automation-app/
-  - title: "Fedback App"
+  - title: "Feedback App"
     url: /feedback-app/
   - title: "Rights Management App"
     url: /rights-management-app/
@@ -51,11 +51,16 @@ aa:
 rma:
   - title: "Initial Setup"
     children:
-      - title: "Microsoft Azure Setup"
-        url: /rights-management-app/azure-setup/
+      - title: "Preriquisites"
+        url: /rights-management-app/preriquisites/
       - title: "ServiceNow Setup"
         url: /rights-management-app/servicenow-setup/
 
 
   - title: "Functionality"
+    children:
+      - title: "Flow Designer"
+        url: /rights-management-app/flow-designer/
+      - title: "Workspace"
+        url: /rights-management-app/workspace/
   
