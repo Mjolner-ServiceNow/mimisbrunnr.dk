@@ -1,7 +1,5 @@
 # main links
 main:
-  - title: "Automation App"
-    url: /automation-app/
   - title: "Feedback App"
     url: /feedback-app/
   - title: "Automation App"
