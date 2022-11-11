@@ -1,9 +1,9 @@
 # main links
 main:
-  - title: "Automation App"
-    url: /automation-app/
   - title: "Fedback App"
     url: /feedback-app/
+  - title: "Automation App"
+    url: /automation-app/
   - title: "Rights Management App"
     url: /rights-management-app/
 
@@ -42,8 +42,14 @@ aa:
 
   - title: "Tutorials"
     children:
+      - title: "Atlassian Jira"
+        url: /automation-app/atlassian-jira-integration/
+      - title: "DocuSign"
+        url: /automation-app/docusign-integration/
       - title: "Microsoft Azure DevOps"
         url: /automation-app/azure-devops-integration/
+      - title: "Microsoft SharePoint"
+        url: /automation-app/sharepoint-integration/
 
   - title: "Use cases"
 
@@ -58,4 +64,3 @@ rma:
 
 
   - title: "Functionality"
-  
