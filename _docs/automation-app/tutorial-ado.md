@@ -21,7 +21,7 @@ This integration will be based on an integration user in Azure DevOps.
 **Notice!** For testing purposes you can use your own user, but it is recommended to create a service account for the integration.
 {: .notice--warning}
 
-### Creating integration user in Azure DevOps
+### Getting a Personal Access Token
 
 Login to [Azure DevOps](https://dev.azure.com/) and select the Project that you wish to integrate to.
 
@@ -46,9 +46,9 @@ A token will now be displayed. Make sure to click the copy icon to copy the toke
 
 In ServiceNow open Runbook Manager in the Application Navigator
 
-![Create a new credential](/assets/images/x_autps_azure_auto_add_credential0.webp)
+![Create a new credential](/assets/images/x_autps_azure_auto_add_variable0.webp)
 
-Click on **Credentials** in the top menu and select **Create** at the bottom of the list to create a new credential.
+Click on **Variables** in the top menu and select **Create** at the bottom of the list to create a new credential.
 
 ![Create a new credential](/assets/images/x_autps_azure_auto_ado_add_credential3.webp)
 
@@ -60,11 +60,13 @@ Click on **Credentials** in the top menu and select **Create** at the bottom of 
 
 ### Create a Runbook for new Work Items
 
-Next up we will create two new Runbook that we will use create new Work Items as well as to update existing Work Items.
+Next up we will create a new Runbook that we will use to create new Work Items.
 
 ![Create an empty Runbook](/assets/images/x_autps_azure_auto_create_runbook0.webp)
 
-Select **Runbooks** i the main menu in **Runbook Manager**. Make sure that you in the same **Automation Account** as you created your credentials in and click **Create** at the bottom of the list.
+Select **Runbooks** i the main menu in **Runbook Manager**.
+
+Make sure that you are in the same **Automation Account** as you created the Personal Access Token variable in and click **Create** at the bottom of the list.
 
 ![Create an empty Runbook](/assets/images/x_autps_azure_auto_ado_create_runbook0.webp)
 
@@ -90,7 +92,7 @@ The **tokenName** should be set to the name of the credentials that you created 
 
 Fill in the **projectName** with the name of the project that you wish to add Work Items to.
 
-In case your project name containes spaces, replace them with **%20**.
+In case your project name contains spaces, replace them with **%20**.
 
 Next click on **Publish**.
 
@@ -106,9 +108,7 @@ After a few minutes the state should change to **Completed** indicating that job
 
 ![Create an empty Runbook](/assets/images/x_autps_azure_auto_ado_create_runbook6.webp)
 
-Scroll down through the **Extracted output variables** and notice the **url** variable. We will using this later in this tutorial as an identifier.
-
-Also notice the ID of the Work Item. In this case **4**.
+Scroll down through the **Extracted output variables** and notice the **url** variable. We will using this later in this tutorial as an identifier, so make sure you copy it.
 
 ### Create a Runbook for adding comments to Work Item
 
@@ -139,11 +139,11 @@ Click on **Edit** to unlock the Runbook for editing.
 
 ![Create an empty Runbook](/assets/images/x_autps_azure_auto_ado_create_runbook12.webp)
 
-Modify the environment variables so that they match the variables we configured previously.
+Modify the environment variable by inserting the name of the variable containing your token.
 
 ![Create an empty Runbook](/assets/images/x_autps_azure_auto_ado_create_runbook13.webp)
 
-Fill out the fields. Remeber to set the **WorkItemId** with the ID that we got back when we created the Work Item. In our case it was 4.
+Paste in the URL that you copied in the previous section under workItemURL and fill in the other fields with test data.
 
 Click create to create a new Job.
 
