@@ -1,6 +1,12 @@
 # main links
 main:
+<<<<<<< HEAD
   - title: "Fedback App"
+=======
+  - title: "Automation App"
+    url: /automation-app/
+  - title: "Feedback App"
+>>>>>>> 71502cd2855a3ac4f98fe08922d4cb0085856f6f
     url: /feedback-app/
   - title: "Automation App"
     url: /automation-app/
@@ -57,10 +63,23 @@ aa:
 rma:
   - title: "Initial Setup"
     children:
-      - title: "Microsoft Azure Setup"
-        url: /rights-management-app/azure-setup/
+      - title: "Preriquisites"
+        url: /rights-management-app/preriquisites/
       - title: "ServiceNow Setup"
         url: /rights-management-app/servicenow-setup/
 
 
   - title: "Functionality"
+<<<<<<< HEAD
+=======
+    children:
+      - title: "Group Monitoring"
+        url: /rights-management-app/group-monitoring/
+      - title: "Roles"
+        url: /rights-management-app/roles/
+      - title: "Flow Designer"
+        url: /rights-management-app/flow-designer/
+      - title: "Workspace"
+        url: /rights-management-app/workspace/
+  
+>>>>>>> 71502cd2855a3ac4f98fe08922d4cb0085856f6f
