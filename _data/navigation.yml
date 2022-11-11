@@ -59,6 +59,10 @@ rma:
 
   - title: "Functionality"
     children:
+      - title: "Group Monitoring"
+        url: /rights-management-app/group-monitoring/
+      - title: "Roles"
+        url: /rights-management-app/roles/
       - title: "Flow Designer"
         url: /rights-management-app/flow-designer/
       - title: "Workspace"
