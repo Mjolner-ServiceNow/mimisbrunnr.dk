@@ -69,6 +69,8 @@ rma:
         url: /rights-management-app/group-monitoring/
       - title: "Roles"
         url: /rights-management-app/roles/
+      - title: "Password reset"
+        url: /rights-management-app/password-reset/
       - title: "Flow Designer"
         url: /rights-management-app/flow-designer/
       - title: "Workspace"

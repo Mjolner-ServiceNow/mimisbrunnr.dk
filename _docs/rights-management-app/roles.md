@@ -38,8 +38,8 @@ Navigate to the role you created and click on the **Edit...** button on the User
 
 Select the user from the list on the left of the screen and click on **Save**.
 
-![User select](/assets/images/x_autps_active_dir_userselection.webp)
+![User select](/assets/images/x_autps_active_dir_userrole.webp)
 
 Now the user has the Role IT Support and the user became member of the Group IT Group as they have the same role. You can confirm this by navigating to the users form and checking if the group is in the Active DIrectory Group Member related list and the Group Membership Changes related list should have a record "Added to group".
 
-![Group member](/assets/images/x_autps_active_dir_membership.webp)
+![Group member](/assets/images/x_autps_active_dir_usermem.webp)

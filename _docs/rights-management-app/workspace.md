@@ -14,6 +14,8 @@ Rights Management App comes with a build in Workspace. From the Workspace you ca
 
 Rights Management App Workspace has a home page from where you can see information about your domains like your groups and users. 
 
+![Workspace](/assets/images/x_autps_active_dir_workspace.webp)
+
 From the home page you can navigate directly to the instructions on how to set up Rights Management App by clicking on the **+ Add Domain** button. A page with instructions will open and it will guide you through some steps that you need to follow to get Rights Management App running on your ServiceNow Instance. You can also click on **Guided setup for Domain registration** button which will navigate you to the guided setup for Rights Management App.
 
 In the **Functionality** section of the Workspace there are two buttons: **Create Role** and **+User path**. By clicking on them you can create a role and add a user path respectively.
