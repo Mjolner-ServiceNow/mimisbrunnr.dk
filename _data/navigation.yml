@@ -75,3 +75,14 @@ rma:
         url: /rights-management-app/flow-designer/
       - title: "Workspace"
         url: /rights-management-app/workspace/
+
+feed:
+  - title: "Installation Guide"
+    children:
+      - title: "Single Page"
+        url: /feedback-app/single-page/
+      - title: "Portal Installation"
+        url: /feedback-app/portal/
+      - title: "Properties"
+        url: /feedback-app/properties/
+     
