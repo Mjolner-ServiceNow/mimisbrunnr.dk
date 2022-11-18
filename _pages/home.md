@@ -10,7 +10,8 @@ feature_row:
   - image_path: /assets/images/logo-fa-neg.webp
     alt: "Feedback App logo"
     excerpt: "Capture feedback directly from your Service Portal."
-    #url: /feedback-app
+    url: /feedback-app
+    btn_label: "Get started"
     btn_class: "btn--inverse"
   - image_path: /assets/images/logo-aa-neg.webp
     alt: "Automation App logo"
@@ -21,6 +22,8 @@ feature_row:
   - image_path: /assets/images/logo-rm-neg.webp
     alt: "Rights Management App"
     excerpt: "Connect to your Active Directory and manage it directly through ServiceNow."
+    url: /rights-management-app
+    btn_class: "btn--inverse"
 
 ---
 
