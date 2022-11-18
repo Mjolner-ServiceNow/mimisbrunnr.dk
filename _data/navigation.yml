@@ -85,4 +85,8 @@ feed:
         url: /feedback-app/portal/
       - title: "Properties"
         url: /feedback-app/properties/
+  - title: "Customization"
+    children:
+      - title: "Customize feedback app"
+        url: /feedback-app/customization/
      
