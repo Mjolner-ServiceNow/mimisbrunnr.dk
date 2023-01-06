@@ -8,6 +8,16 @@ sidebar:
 toc: true
 ---
 
+## 2.7.1 January 6th, 2023
+
+In this release we have focused on security and stability. To add to the security of the communication between Automation App and Azure we now support OAuth 2.0 certificate-based authentication as an alternative to using a secret 😎
+
+You are now also able to manage certificates in your Automation Account directly from Runbook Manager making it even easier for you to secure your integrations by using certificates 💪
+
+We have also improved the syntax highlighting and output handling of PowerShell 7 based Runbooks 🤩
+
+Lastly, we have made improvements to make the execution engine even more robust to cater for situations where unexpected results caused by network errors or endpoint unavailability would break communications 🙌
+
 ## 2.6.1 September 8th, 2022
 
 We now capture and save the actual runtime of Jobs. You can use this for reporting, but we are also using this information to optimize when we are fetching updates on running Jobs. This gives you faster execution times and extended possibilities for accurate reporting 🙌
