@@ -24,13 +24,68 @@ Enter a meaningful name of your tenant and add the Tenant ID that we have collec
 
 If you have more than one tenant repeat this step for each tenant.
 
+
+
+### Authenticate using a Secret
+
+If you wish to authenticate using a secret you need follow this step. If you wish to use a certificate instead, you can skip to the next section.
+
 ![Click on new application](/assets/images/x_autps_azure_auto_applications.webp)
 
 Next click the **New** button in the **Applications** related list of the **Tenant** record.
 
 ![Insert new application](/assets/images/x_autps_azure_auto_add_application.webp)
 
-Give your application a meaningful name. Input the Application ID and Key that we collected in the Azure setup section of this guide.
+Now we need to use the Application ID and secret that we optained in the previous chapter.
+
+1. Give your application a meaningful name. 
+2. Input the Application ID.
+3. Select **Client secret**.
+4. Paste in your secret.
+
+Repeat this step if you need to setup more than one application.
+
+### Authenticate using a Certificate
+
+If you completed the above step and wish to authenticate with a secret, you can skip this section.
+
+To authenticate using a certificate we first need to upload the certificate that we created in the previouschapter.
+
+![Click on new application](/assets/images/x_autps_azure_auto_add_certificate1.webp)
+
+Navigate to **System Definition** -> **Certificates**.
+
+![Click on new application](/assets/images/x_autps_azure_auto_add_certificate2.webp)
+
+Click the **New** button in the upper right corner of the list.
+
+![Click on new application](/assets/images/x_autps_azure_auto_add_certificate3.webp)
+
+1. Give the certificate a meaningful name.
+2. Set the **Type** to **Java Key Store**.
+3. CLick on the attachment handler.
+
+Locate the JKS file that we generated in the previous chapter and attach it to the revord.
+
+![Click on new application](/assets/images/x_autps_azure_auto_add_certificate4.webp)
+
+1. Verify that the JKS file is now attached.
+2. Fill in the password that you selected in the previous chapter in the **Key store password** field.
+3. Click **Validate Stores/Certificates**.
+
+You should now get a verification that you have created a valid key store.
+
+![Click on new application](/assets/images/x_autps_azure_auto_applications.webp)
+
+Navigate back to the tenant record and click the **New** button in the **Applications** related list.
+
+![Insert new application](/assets/images/x_autps_azure_auto_add_application_cert.webp)
+
+1. Give your application a meaningful name. 
+2. Input the Application ID.
+3. Select **Java key store (certificate)**.
+4. Select the Java key store you uploaded in the previous step and key in the **entry name** and **key store password**.
+5. Click **Submit**.
 
 Repeat this step if you need to setup more than one application.
 

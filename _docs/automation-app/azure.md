@@ -39,7 +39,7 @@ Copy and store the "Application (client) ID" and "Directory (tenant) ID" as you 
 
 ### Generate a secret
 
-The Automation App can authenticate with Microsoft Azure using a client secret. To generate one, click the "Certificates & Secrets" under "Manage".
+If you would like Automation App to authenticate with Microsoft Azure using a client secret you must generate a secret. To generate one, click the "Certificates & Secrets" under "Manage".
 
 ![Click on New client secret](/assets/images/x_autps_azure_auto_create_client_secret1.webp)
 
@@ -53,6 +53,27 @@ Enter something meaningful in the "Description" field and select an expiration d
 
 Once you click "add" a key will be generated. This is the only time that you will be able to see this key, so make sure that you copy it and store it somewhere safe together with the "Application (client) ID" and "Directory (tenant) ID" that you copied earlier.
 
+### Generate a certificate
+
+If instead you wish to use a certificate you need to uplade the certificate you wish to use to Azure. Here is an example of how you can generate a certficate.
+
+To create a new PEM certificate in a CRT file, write the following command, where "test1-key" is the name of the key and "test-cert" is the name of the certificate.
+
+`openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout test1-key.key -out test1-cert.crt`
+
+Next convert the key and the certificate into a PKCS#12 certficate where "test1-certificate" is the name of the combined certificate.
+
+`openssl pkcs12 -export -out test1-certificate.pfx -inkey test1-key.key -in test1-cert.crt`
+
+Lastly add the PFX file to a Java Key Store. Where "test1-jks" is the name of the JKS file and "test_cert" is the entry name (alias) that the certficate will be saved as in the Jave Key Store.
+
+`keytool -importkeystore -srckeystore test1-certificate.pfx -srcstoretype PKCS12 -destkeystore test1-jks.jks -name test_cert`
+
+We will be using the JKS file later when we setup ServiceNow. Make sure to remember the entry name and the password.
+
+![Upload the certificate](/assets/images/x_autps_azure_auto_create_client_certificate.webp)
+
+The CRT file should be uploaded to Azure, by clicking the certificates and then click "Upload".
 
 ## Setup an Automation Account
 
@@ -85,4 +106,4 @@ Select "Contributor" under "Role". Next search for the ServiceNow application th
 We are now done setting up Azure and are ready to configure ServiceNow. Ensure that you have recorded the following information:
 * Application (client) ID
 * Directory (tenant) ID
-* Client secret
+* Client secret or Java Key Store with a password and entry name
