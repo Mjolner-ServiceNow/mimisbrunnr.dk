@@ -20,7 +20,7 @@ From the main menu of Runbook Manager navigate to **Variables** and click on **C
 
 ![Click on Dashboard](/assets/images/x_autps_azure_auto_add_variable1.webp)
 
-Alternatively you can obtain the same by click on **Variables** if you have an open Runbook and then click on **Create new**.
+Alternatively you can obtain the same by clicking on **Variables** if you have an open Runbook and then click on **Create new**.
 
 ![Click on Dashboard](/assets/images/x_autps_azure_auto_add_variable2.webp)
 

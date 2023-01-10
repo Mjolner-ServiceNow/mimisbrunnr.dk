@@ -26,6 +26,8 @@ aa:
         url: /automation-app/variables/
       - title: "Credentials"
         url: /automation-app/credentials/
+      - title: "Certificates"
+        url: /automation-app/certificates/
       - title: "Flow Designer"
         url: /automation-app/flow-designer/
       - title: "Workflow"

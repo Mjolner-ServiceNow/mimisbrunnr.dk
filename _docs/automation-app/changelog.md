@@ -8,7 +8,7 @@ sidebar:
 toc: true
 ---
 
-## 2.7.1 January 6th, 2023
+## 2.7.1 January 10th, 2023
 
 In this release we have focused on security and stability. To add to the security of the communication between Automation App and Azure we now support OAuth 2.0 certificate-based authentication as an alternative to using a secret 😎
 
