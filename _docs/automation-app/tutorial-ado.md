@@ -2,10 +2,11 @@
 layout: single
 title: Microsoft Azure DevOps Integration
 permalink: /automation-app/azure-devops-integration/
-last_modified_at: 2022-11-15T16:36:18-04:00
+last_modified_at: 2023-01-19T16:36:18-04:00
 sidebar:
   nav: "aa"
 toc: true
+read_time: true
 ---
 
 In this guide we will build a simple bi-directional integration between ServiceNow and Microsoft Azure DevOps.
@@ -38,7 +39,7 @@ Click the user icon with the little gear icon in the upper right corner and sele
 
 Then click on **Create**
 
-![Create a new credential](/assets/images/x_autps_azure_auto_ado_add_credential2.webp)
+![Token is disaplayed](/assets/images/x_autps_azure_auto_ado_add_credential2.webp)
 
 A token will now be displayed. Make sure to click the copy icon to copy the token
 
@@ -48,11 +49,11 @@ In ServiceNow open Runbook Manager in the Application Navigator
 
 ![Select varialbes](/assets/images/x_autps_azure_auto_add_variable0.webp)
 
-Click on **Variables** in the top menu and select **Create** at the bottom of the list to create a new credential.
+Click on **Variables** in the top menu and select **Create** at the bottom of the list to create a new variable .
 
-![Create a new credential](/assets/images/x_autps_azure_auto_ado_add_credential3.webp)
+![Create a new variable](/assets/images/x_autps_azure_auto_ado_add_credential3.webp)
 
-1. Give the credential a name. Eg. **AzureDevOpsTokenCred**
+1. Give the variable a name. Eg. **AzureDevOpsTokenCred**
 2. Give the variable an optional description. It is always a good approach to note the expiration date of the token
 3. Provide the full username to use
 4. Insert the token that you have just created

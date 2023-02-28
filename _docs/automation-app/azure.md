@@ -3,7 +3,7 @@ layout: single
 title: Microsoft Azure Setup
 excerpt: "Instructions for how to setup access and create needed assets in Microsoft Azure"
 permalink: /automation-app/azure-setup/
-last_modified_at: 2022-10-12T16:36:18-04:00
+last_modified_at: 2023-01-23,T14:21:18-04:00
 sidebar:
   nav: "aa"
 toc: true
@@ -59,7 +59,7 @@ If instead you wish to use a certificate you need to uplade the certificate you 
 
 To create a new PEM certificate in a CRT file, write the following command, where "test1-key" is the name of the key and "test-cert" is the name of the certificate.
 
-`openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout test1-key.key -out test1-cert.crt`
+`openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout test1-key.key -out test1-cert.crt`
 
 Next convert the key and the certificate into a PKCS#12 certficate where "test1-certificate" is the name of the combined certificate.
 

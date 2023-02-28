@@ -48,6 +48,8 @@ aa:
         url: /automation-app/atlassian-jira-integration/
       - title: "DocuSign"
         url: /automation-app/docusign-integration/
+      - title: "Microsoft Azure Active Directory"
+        url: /automation-app/azure-ad-integration/
       - title: "Microsoft Azure DevOps"
         url: /automation-app/azure-devops-integration/
       - title: "Microsoft SharePoint"
