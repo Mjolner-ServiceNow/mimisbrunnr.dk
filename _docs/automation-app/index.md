@@ -15,7 +15,7 @@ Unlock full integration of Microsoft Azure Automation into your ServiceNow insta
 
 If your organization is already familiar with Microsoft Orchestration or Azure Automation utilizing this app will enable you to easily create orchestration workflows using technologies that are already known to your organization. This makes the adaption swift, limits the need for technical training of staff, and enables you to easily reuse already created Runbooks. Using ServiceNow standard or premium reporting you can easily highlight and track your ROI in automation.
 
-[Book a Demo](https://meet.automize.dk/meetings/lasse-kjelstrup-hoop/automation-app-demo)
+[Book a Demo](https://meet.automize.dk/meetings/daniel-greve/automation-app-demo)
 
 ### Key application areas
 - Password Resets

@@ -1,0 +1,11 @@
+LKH:
+  name        : "Lasse Kjelstrup-Hoop"
+  bio         : "Simplicity is the ultimate sophistication"
+  avatar      : "/assets/images/bio-lkh.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:lkh@automize.dk"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/lasse-kjelstrup-hoop/"

@@ -6,6 +6,8 @@ main:
     url: /automation-app/
   - title: "Rights Management App"
     url: /rights-management-app/
+  - title: "Blog"
+    url: /blog/
 
 aa:
   - title: "Initial Setup"
@@ -14,6 +16,8 @@ aa:
         url: /automation-app/azure-setup/
       - title: "ServiceNow Setup"
         url: /automation-app/servicenow-setup/
+      - title: "Hybrid Workers"
+        url: /automation-app/hybrid-worker/
 
 
   - title: "Automating"
@@ -54,8 +58,6 @@ aa:
         url: /automation-app/azure-devops-integration/
       - title: "Microsoft SharePoint"
         url: /automation-app/sharepoint-integration/
-
-  - title: "Use cases"
 
 
 rma:

@@ -15,7 +15,7 @@
 {%- endif -%}
 
 {% if page.canonical_url %}
-  {%- assign canonical_url = page.canonical_url %}
+  {%- assign canonical_url = site.url | append: page.canonical_url %}
 {% else %}
   {%- assign canonical_url = page.url | replace: "index.html", "" | absolute_url %}
 {% endif %}

@@ -1,11 +1,9 @@
 ---
-layout: splash
+author: LKH
 title: "Working with Admin overrides ACL"
-sitemap: true
-permalink: /working-with-admin-override-acl
 ---
 
-You may find yourself in a situation where you want to give access to a certain table or field for only user with a specific role. Admins per default implicitly have all roles and setting a specific role on a ACL will still allow users with admin role access.
+You may find yourself in a situation where you want to give access to a certain table or field for only users with a specific role. Admins per default implicitly have all roles and setting a specific role on an ACL will still allow users with admin role access.
 
 One way to circumway this has been to set the field **Admin overrides** to false indicating that user must explicitly have the roles listed.
 
@@ -13,9 +11,9 @@ One way to circumway this has been to set the field **Admin overrides** to false
 
 Setting **Admin overrides** to false will however only take effect if **High-Security Plugin** is active and the system property **glide.security.admin.override.accessterm** is set to true.
 
-To assume a certain configuration of a customer's ServiceNow instance is not an option for us. Thus we needed a secure way of disabling access to certain tables for admins.
+Since our apps are installed in many different customer instances, assuming a certain configuration of a customer's ServiceNow instance is not an option for us. Thus we needed a secure way of disabling access to certain tables for admins.
 
-The below ACL script condition example on how to evaluate if a user has a certian role explicitly.
+The below ACL script condition is an example on how to evaluate if a user has a certian role explicitly.
 
 ```javascript
 answer = gs.getSession().getRoles().indexOf('role_name') !== -1;

@@ -279,21 +279,33 @@ compress_html:
     envs: development
 
 # Collections
-#collections:
-#  docs:
-#    output: true
-#    permalink: /:collection/:path/
+collections:
+  posts:
+    output: true
+    permalink: /blog/:path/
 
 # Defaults
 defaults:
   # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      show_date: true
+      author_profile: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
+
   # _docs
   - scope:
       path: ""
       type: aa
     values:
       layout: single
-      read_time: false
+      read_time: true
       author_profile: false
       share: false
       comments: false
