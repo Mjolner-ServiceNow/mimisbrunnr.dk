@@ -67,7 +67,7 @@ Next convert the key and the certificate into a PKCS#12 certficate where "test1-
 
 Lastly add the PFX file to a Java Key Store. Where "test1-jks" is the name of the JKS file and "test_cert" is the entry name (alias) that the certficate will be saved as in the Jave Key Store.
 
-`keytool -importkeystore -srckeystore test1-certificate.pfx -srcstoretype PKCS12 -destkeystore test1-jks.jks -name test_cert`
+`keytool -importkeystore -srckeystore test1-certificate.pfx -srcstoretype PKCS12 -destkeystore test1-jks.jks -srcalias 1 -destalias test_cert`
 
 We will be using the JKS file later when we setup ServiceNow. Make sure to remember the entry name and the password.
 
