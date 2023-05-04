@@ -364,7 +364,10 @@ Click on **Automation App** and then **Start job**.
 1. Select the Runbook that we created previously.
 2. Set **Input format** to **Auto**.
 3. Click the **code** icon next to the **Input** field.
-4. Replace the text in the **Input** field with *return gs.getProperty('instance_name');*
+4. Replace the text in the **Input** field with:
+```javascript
+return gs.getProperty('instance_name');
+```
 5. For reporting on your automation savings insert the appropriate time savings.
 6. Click on **Done**.
 
@@ -579,6 +582,24 @@ Right-click on grey bar at the top of the list of **Field maps** and select **Re
 ![Register an application](/assets/images/x_autps_azure_auto_azure-discovery72.webp)
 
 You should now see a list of the 10 field maps that we just created.
+
+We do not want the transform map to transform data, that is not a virtual machine. Thus we will ask it to ignore anything that is not a virtual machine.
+
+![Register an application](/assets/images/x_autps_azure_auto_azure-discovery73.webp)
+Click on **Transform Scrips** and then click on the **New** button.
+
+![Register an application](/assets/images/x_autps_azure_auto_azure-discovery74.webp)
+Select **onBefore** under **When** and past in the below script in the **Script** field.
+
+```javascript
+(function runTransformScript(source, map, log, target ) {
+	if(source.resource_type.toString() !== 'Microsoft.Compute/virtualMachines'){
+		ignore = true;
+	}
+})(source, map, log, target);
+```
+
+Click on **Submit** to save the **Transform Script**.
 
 To verify that everything works as expected you can go back to Flow Designer and select **Test** on the flow that we created there. You should then see that virtual machines should appear in the **Virtual Machine Instance** table.
 
