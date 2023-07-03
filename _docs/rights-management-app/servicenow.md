@@ -18,7 +18,7 @@ Navigate to the Users List under User Administration into ServiceNow and create 
 
 Give a username and a password to the user and copy and store them because you will need them. Set the Web Service access only field to true. Give the user the **"x_autps_active_dir.user"** and **"x_autps_active_dir.service"** roles.
 
-![Register a user](/assets/images/x_autps_active_dir_user.webp)
+![Register a user](/assets/images/snowuser.webp)
 
 Then go to your Azure Automation Account click on **"Credentials"** on the left-side menu and **"Add a credential"**. 
 
