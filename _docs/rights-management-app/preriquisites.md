@@ -24,6 +24,9 @@ Copy the Application (client) ID and Directory (tenant) ID.
 
 ## Generate a client secret 
 In order for the Automation App to connect with Azure Automation you need to generate a client secret . In your App click on "Certificates & secrets".
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 7d09659 (Rights management app)
