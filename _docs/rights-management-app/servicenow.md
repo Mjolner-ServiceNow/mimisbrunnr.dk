@@ -56,8 +56,3 @@ Click on the scheduled import record for your application and then click on "Exe
 
 After this step you should be able to see your Automation Account in the Automation Accounts list of the Automation App.
 
-## Create a Domain and connect to your Active Directory
-
-Go to the **Domains** list in Rights Managament App and click on **New**. Give a meaningful name to your Domain. In the Setup Section set the value of the **Domain Controller IP** to be the IP address of your Hybrid Worker. Next set the value of the **Automation Account** to be equal to the Automation Account you are going to use and configured in the Automation App setup guide. Set the Active Directory Credentials to be the credentials of the admin in your Active Directory and the ServiceNow Credentials to be the credentials you created in step Create ServiceNow Credentials.  Select your Hybrid worker group and click on Update. A Runbook will be automatically created for you and this will be used to fetch User, Groups and Group memberships from your Active Directory and import them into your Domain in your ServiceNow instance.
-
-![Create domain](/assets/images/x_autps_active_dir_domain.webp)

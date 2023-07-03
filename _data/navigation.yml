@@ -69,8 +69,10 @@ rma:
         url: /rights-management-app/preriquisites/
       - title: "ServiceNow Setup"
         url: /rights-management-app/servicenow-setup/
-        - title: "Preriquisites to connect to Azure Active Directory"
+      - title: "Preriquisites to connect to Azure Active Directory"
         url: /rights-management-app/prerequisites-to-connect-to-aad/
+      - title: "Domain registration"
+        url: /rights-management-app/domain-registration/
 
 
   - title: "Functionality"
