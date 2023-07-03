@@ -194,4 +194,4 @@ Then navigate to Azure Active Directory and Roles and Administrators give role "
 
 ![Request](/assets/images/apiroles.webp)
 
-![Request](/assets/images/appassignment.webp)
+![Request](/assets/images/addassignment.webp)
