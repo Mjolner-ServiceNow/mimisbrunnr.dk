@@ -8,13 +8,13 @@ sidebar:
 toc: true
 ---
 
-With Rights Management App you are able to access all groups in your Active Directory and track the group memberships from ServiceNow. This is a powerfull tool as it gives you the advantage of reviewing and controlling access permissions to ensure that users have the exact permissions they need to do their job and that no access is given that the user should not have. 
+With Rights Management App you are able to access all groups in your Active Directory and Azure Active Directory and track the group memberships from ServiceNow. This is a powerfull tool as it gives you the advantage of reviewing and controlling access permissions to ensure that users have the exact permissions they need to do their job and that no access is given that the user should not have. 
 
-You decide to what extend you want Rights Management App to take control over your groups in Active Directory. This is configured per group, so you can fine grain the level of control that you want to apply to different groups of your Active Directory. 
+You decide to what extend you want Rights Management App to take control over your groups in Active Directory and Azure Active Directory. This is configured per group, so you can fine grain the level of control that you want to apply to different groups. 
 
 ## Group sync policies
 
-There are four different group sync policies available in Rights Management App. Depending on which you se in each group there will be different functionality applied to the group. 
+There are four different group sync policies available in Rights Management App. Depending on which you set in each group there will be different functionality applied to the group. 
 
 ![Sync policy](/assets/images/x_autps_active_dir_groupsync.webp)
 
@@ -32,4 +32,4 @@ One more level up is **"Permissive"**. With this sync policy you can manage acce
 
 ### Enforcing
 
-The highest level is **"Enforcing"**. At this level you can manage access to a group and ServiceNow will not report on deviations, it will correct them, meaning that memberships you have defined that they shoul be there in ServiceNow will be enforced and any deviation will be overwritten.
+The highest level is **"Enforcing"**. At this level you can manage access to a group and ServiceNow will not report on deviations, it will correct them, meaning that memberships you have defined that they should be there in ServiceNow will be enforced and any deviation will be overwritten.
