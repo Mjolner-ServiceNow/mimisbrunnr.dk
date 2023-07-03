@@ -57,6 +57,7 @@ Open the Azure Portal and navigate to the Automation Account that you wish to cr
 ![Request](/assets/images/createhybridworkergroup.webp)
 
 Give a meaningful Name to your Hybrid Worker, set User Hybrid Worker Credentials to Default and click on Next.
+
 ![Request](/assets/images/hybridworkername.webp)
 
 Then click on "+Add machines" select the Hybrid Workers that you wish to work with and click on "Add".
@@ -66,6 +67,7 @@ Then click on "+Add machines" select the Hybrid Workers that you wish to work wi
 At last click on "Review+create".
 
 You can also add Hybrid Worker to an existing Hybrid Worker group. You can do that by navigating to Automation Account and clicking on the "Hybrid Worker groups" on the left side menu. Find the group you wish to add the Hybrid Worker to and select it.
+
 ![Request](/assets/images/addhybridworker.webp)
 
 Then click on "Hybrid Workers" on the left side menu and then click on "+Add". Select the machines you would like to add as Hybrid Workers and click Add.
