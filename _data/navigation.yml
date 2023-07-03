@@ -85,8 +85,7 @@ rma:
         url: /rights-management-app/password-reset/
       - title: "Flow Designer"
         url: /rights-management-app/flow-designer/
-      - title: "Workspace"
-        url: /rights-management-app/workspace/
+    
 
 feed:
   - title: "Installation Guide"
