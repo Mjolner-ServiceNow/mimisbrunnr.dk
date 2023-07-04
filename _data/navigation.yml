@@ -90,6 +90,8 @@ rma:
         url: /rights-management-app/create-azureaduser/
       - title: "Password reset"
         url: /rights-management-app/password-reset/
+      - title: "Create Azure AD Guest User"
+        url: /rights-management-app/create-aadguestuser/
     
 
 feed:
