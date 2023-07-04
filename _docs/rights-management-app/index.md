@@ -28,4 +28,4 @@ If your organisation is struggling to follow account permissions given to users 
 
 - Automate everyday tasks with the use of flow designer
 
-There is a list of available actions you can use in flow designer with rights management app. This simplifies your work because it doesn’t need any coding, it is a simple drag and drop process with which you can automate anything you want for your Active Directory and azure Active Directory 
+  There is a list of available actions you can use in flow designer with rights management app. This simplifies your work because it doesn’t need any coding, it is a simple drag and drop process with which you can automate anything you want for your Active Directory and azure Active Directory 
