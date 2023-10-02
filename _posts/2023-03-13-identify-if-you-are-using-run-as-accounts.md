@@ -25,7 +25,7 @@ We can also see that there has not been created any **Azure Classic Run As Accou
 
 If you have an active **Run as account**  you will want to go through your **Runbooks** to verify if they are in use anywhere.
 
-The CMDLET **Get-AutomationConnectio** is what we are mainly looking for. So you should look for code similar to the below:
+The CMDLET **Get-AutomationConnection** is what we are mainly looking for. So you should look for code similar to the below:
 
 ```powershell
 $connection = Get-AutomationConnection -Name $connectionAssetName  
