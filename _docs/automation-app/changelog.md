@@ -8,6 +8,36 @@ sidebar:
 toc: true
 ---
 
+## 3.0.6 October 11th, 2023
+
+We're thrilled to introduce Automation App Version 3.0, loaded with exciting new features, crucial bug fixes, and some tech upgrades to elevate your automation experience. Here's the lowdown on what's changed:
+
+New Features:
+
+- 📊 Runbook Insights: Stay in the know with real-time updates on completion, failure, and expected runtime for each Runbook.
+- 📚 Module Access: Access modules directly from the Runbook Manager UI for seamless workflow management.
+- 🔄 Runbook Version Comparison: Easily compare your Draft with the Published version of the Runbook.
+- 🔍 Enhanced Search: Enjoy improved search capabilities in variables, certificates, and credentials.
+- 📖 Documentation and Support Links: Access documentation and support resources directly within Runbook Manager.
+- ⚙️ Runtime Exceptions: Identify and address runtime exceptions right from Runbook Manager.
+- 🛠️ One-Step Runbook Creation: Create a Runbook from a Template in a simplified one-step process.
+- ⚙️ Account Settings: Access Automation Account settings conveniently from Runbook Manager.
+- 🌐 Integration with Polaris UI: Seamlessly open Runbooks in Runbook Manager from the ServiceNow Polaris UI.
+- ✂️ Efficient Snippets: Snippets are automatically pasted at the current cursor position in Runbook Manager for enhanced productivity.
+
+Bug Fixes:
+
+- 🐛 Speedy Module Imports: Fixed slow import issues for larger modules, ensuring a smoother experience.
+- 🌐 Azure Patch Management Fix: Resolved the issue where Patch Management Jobs in Azure caused excessive load during import into ServiceNow.
+
+Technical (Nerdy) Changes:
+
+- ⬆️ React Upgrade: Leveled up from React 16 to 18 for a more powerful and responsive user interface.
+- 🆙 Bootstrap Enhancement: Upgraded from Bootstrap 4 to 5, bringing a modernized design and improved responsiveness.
+- 🚀 ECMAScript Boost: Uplifted from ES5 to ES12 for enhanced performance and compatibility.
+
+We're dedicated to continuously improving Automation App to make your automation journey smoother and more efficient. We hope you enjoy these enhancements, and stay tuned for more exciting updates in the future! 🎉
+
 ## 2.7.2 January 10th, 2023
 
 In this release we have focused on security and stability. To add to the security of the communication between Automation App and Azure we now support OAuth 2.0 certificate-based authentication as an alternative to using a secret 😎

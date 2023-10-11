@@ -27,7 +27,7 @@ Here's how OCSP works in ServiceNow:
 
 4. ServiceNow sends a request to the OCSP responder, which is a server operated by the certificate authority (CA) that issued the certificate. This request contains the certificate in question.
 
-5. The OCSP responder checks its database to see if the certificate is still valid or if it has been revoked. It then sends a response to the client, indicating whether the certificate is "good," "revoked," or "unknown."
+5. The OCSP responder checks its database to see if the certificate is still valid or if it has been revoked. It then sends a response to ServiceNow, indicating whether the certificate is "good," "revoked," or "unknown."
 
 5. Based on the OCSP response, ServiceNow can make an informed decision about whether to trust the server's certificate.
 
