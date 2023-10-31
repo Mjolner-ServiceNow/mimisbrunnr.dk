@@ -8,7 +8,7 @@ sidebar:
 toc: true
 ---
 
-In this guide we will configure **Rights Management App** in ServiceNow to be able to connect to your Active Directory. To complete this guide you must have the role of **Admin** in ServiceNow and Automation App should be alreaady installed and set up in your environment. Here is the guide to [setup the Automation App](/automation-app/azure-setup/).
+In this guide we will configure **Rights Management App** in ServiceNow to be able to connect to your Active Directory. To complete this guide you must have the role of **Admin** in ServiceNow and Automation App should be already installed and set up in your environment. Here is the guide to [setup the Automation App](/automation-app/azure-setup/).
 
 ## Create ServiceNow Credentials
 
