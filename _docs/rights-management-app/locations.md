@@ -1,6 +1,6 @@
 ---
 layout: single
-title: ServiceNow Setup
+title: Locations
 permalink: /rights-management-app/locations/
 last_modified_at: 
 sidebar:
@@ -8,7 +8,7 @@ sidebar:
 toc: true
 ---
 
-**Create Location**
+### Create Location
 Locations can be created to collect groups that are related to specific locations in your organization. For example think of a company that has two locations one in Copenhagen and one in Kolding. The people working in Copenhagen have different access to systems than the ones working in Koldning because for example they are using specific printers or parking ereas related to their location. By using the Location feature in Rigths Management App you can collect all the groups that are relates to specific locations and assign memebrships much easier and quicker. Navigate to Rights Management App > Locations and click on New.
 
 ![Locations list](/assets/images/location.webp)
@@ -25,9 +25,9 @@ Select the group you want to add to the location and the Entitlement Type of the
 
 ![Add an azure active directory group to the location](/assets/images/locationlink.webp)
 
-**Assign the Department to an Identity**
+### Assign the Location to an Identity
 Navigate to Rights Management App > Identities and select an Identity you want to add to the Location and open the record. In the Location field click on the search/magnifier button and select the Location you created. Then click on Update. On this way the Location is assigned to the Identity and the accounts linked to the Identity became members of the groups that are linked to the location.
 
-![Add an identity to the department](/assets/images/identitylocation.webp)
+![Add an identity to the Location](/assets/images/identitylocation.webp)
 
 ![Accounts added to groups](/assets/images/identityaddedtogroupsloc.webp)

@@ -81,12 +81,14 @@ rma:
         url: /rights-management-app/group-monitoring/
       - title: "Identities"
         url: /rights-management-app/identities/
-      - title: "Department"
-        url: /rights-management-app/department/
-      - title: "Location"
+      - title: "Departments"
+        url: /rights-management-app/departments/
+      - title: "Locations"
         url: /rights-management-app/locations/
-      - title: "Roles"
-        url: /rights-management-app/roles/
+      - title: "Positions"
+        url: /rights-management-app/positions/
+      - title: "Static Roles"
+        url: /rights-management-app/staticroles/
       - title: "Flow Designer"
         url: /rights-management-app/flow-designer/
     

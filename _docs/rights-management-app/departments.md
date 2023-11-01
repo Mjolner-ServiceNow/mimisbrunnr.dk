@@ -1,14 +1,14 @@
 ---
 layout: single
-title: ServiceNow Setup
-permalink: /rights-management-app/department/
+title: Departments
+permalink: /rights-management-app/departments/
 last_modified_at: 
 sidebar:
   nav: "rma"
 toc: true
 ---
 
-**Create Department**
+### Create Department
 Departments can be created to collect groups that are related to specific departments in your organization. Navigate to Rights Management App > Departments and click on New.
 
 ![Departments list](/assets/images/department.webp)
@@ -25,7 +25,7 @@ Select the group you want to add to the department and the Entitlement Type of t
 
 ![Add an active directory group to the department](/assets/images/adgroupdepart.webp)
 
-**Assign the Department to an Identity**
+### Assign the Department to an Identity
 Navigate to Rights Management App > Identities and select an Identity you want to add to the Department and open the record. In the Department field click on the search/magnifier button and select the Departmenet you created. Then click on Update. On this way the Department is assigned to the Identity and the accounts linked to the Identity became members of the groups that are linked with the department.
 
 ![Add an identity to the department](/assets/images/adddeparttoidentity.webp)
