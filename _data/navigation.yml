@@ -89,6 +89,8 @@ rma:
         url: /rights-management-app/positions/
       - title: "Static Roles"
         url: /rights-management-app/staticroles/
+      - title: "Dynamic Roles"
+        url: /rights-management-app/dynamicroles/
       - title: "Flow Designer"
         url: /rights-management-app/flow-designer/
     
