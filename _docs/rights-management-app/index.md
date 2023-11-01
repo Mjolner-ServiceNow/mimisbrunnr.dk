@@ -20,16 +20,17 @@ If your organisation is struggling to follow account permissions given to users 
 
 - Identities
 
-With Rights Management App you have the advantage of collecting all accounts a user owns in your Active Directory, Azure Active Directory and in ServiceNow under one Identity that represents the user. You can create compliance reports for each Identity to investigate if the correct group memberships are assigned to the different accounts of the user and fix possible mistakes. 
+  With Rights Management App you have the advantage of collecting all accounts a user owns in your Active Directory, Azure Active Directory and in ServiceNow under one Identity that represents the user. You can create compliance reports for each Identity to investigate if the correct group memberships are assigned to the different accounts of the user and fix possible mistakes. 
 
 - Role based access 
 
   In an Active Directory not all users would require access to all the systems, applications and data resourses in the network. This limitation of access is for security reasons, because critical resources could be misused in case a user has the wrong access. With Rights Management App we introduce the roles abstraction layer which controls access of users and groups and also can be used to collect groups required to carry out a certain role such as "Financial Control", "IT Support" etc. This simplifies management access greatly. 
+  
   An approval flow is defined that can be used to approve memberships before assigning them to user. You can have an approval group, or just require an approval by the owner of the role or by the manager of the user for whom the role membership is requested.
 
   You can also create Departments, Locations and Positions that will contain a number of groups and assign those Departments, Locations and Positions to Identities so the accounts that are linked with the identities will become members of the groups included in the Departments, Locations and Positions. On that way membership assignment bacomes much more easier.
 
-  You have now the possibility to create Dynamic Roles. If the conditions defined in a Dynamic Role match an Identity then this role is automatically assign to the Identity and group memberships defined by the dynamic role are created.
+  Moreover you have now the possibility to create Dynamic Roles. If the conditions defined in a Dynamic Role match an Identity then this role is automatically assign to the Identity and group memberships defined by the dynamic role are created.
 
 - Time limited membership
 
@@ -37,4 +38,4 @@ With Rights Management App you have the advantage of collecting all accounts a u
 
 - Automate everyday tasks with the use of flow designer
 
-  There is a list of available actions you can use in flow designer with rights management app. This simplifies your work because it doesn’t need any coding, it is a simple drag and drop process with which you can automate anything you want for your Active Directory and azure Active Directory 
+  There is a list of available actions you can use in flow designer with rights management app. This simplifies your work because it doesn’t need any coding, it is a simple drag and drop process with which you can automate anything you want for your Active Directory and Azure Active Directory 

@@ -21,4 +21,4 @@ Click on Submit.
 The Runbook field will be populated automatically.
 
 ## Domain ready
-If all steps were followed and implemented correctly you should see after some minutes the Sync State change to Ready and the related lists of Organizational Units, Users and Groups being populated with information.
+If all steps were followed and implemented correctly you should see after some minutes the Sync State of the Domain to change to Ready and the related lists of Organizational Units, Users and Groups being populated with records.
