@@ -51,7 +51,7 @@ steps:
   # Advanced
     #enableUtf8: false # boolean. Enable UTF8 support. Default: false. 
     #clean: false # boolean. Delete remote directory. Default: false.
-    #cleanContents: false # boolean. Optional. Use when clean = false. Clear remote directory contents. Default: false.
-    #preservePaths: false # boolean. Preserve file paths. Default: false.
+    cleanContents: true # boolean. Optional. Use when clean = false. Clear remote directory contents. Default: false.
+    preservePaths: true # boolean. Preserve file paths. Default: false.
     trustSSL: true # boolean. Trust server certificate. Default: false.
     #customCmds: # string. FTP Commands.
