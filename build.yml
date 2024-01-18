@@ -17,12 +17,11 @@ steps:
 - script: |
     gem install jekyll bundler
     bundle install --retry=3 --jobs=4
-  displayName: 'bundle install'
+  displayName: 'Jekyll install'
  
 - script: |
-    bundle install
     jekyll build
-  displayName: 'jekyll'
+  displayName: 'Jekyll build'
  
 - task: CopyFiles@2
   displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)'
@@ -30,7 +29,29 @@ steps:
     SourceFolder: '_site'
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
-- task: PublishBuildArtifacts@1
+- script: |
+    mv $(Build.ArtifactStagingDirectory)/_site/blog.html $(Build.ArtifactStagingDirectory)/_site/blog/index.html
+  displayName: 'Rename blog.html to index.html'
+
+- script: |
+    rm $(Build.ArtifactStagingDirectory)/_site/build.yml
+  displayName: 'Clean-up files'
+
+- task: FtpUpload@2
   inputs:
-    pathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    artifactName: site
+    credentialsOption: 'inputs' # 'serviceEndpoint' | 'inputs'. Alias: credsType. Required. Authentication Method. Default: serviceEndpoint.
+    #serverEndpoint: # string. Required when credsType = serviceEndpoint. FTP Service Connection. 
+    serverUrl: 'ftps://docs.automize-software.com' # string. Required when credsType = inputs. Server URL. 
+    username: 'azurepipeline@docs.automize-software.com' # string. Required when credsType = inputs. Username. 
+    password: '*[MdKX-HHeVy' # string. Required when credsType = inputs. Password. 
+    #implicitFTPS: false # boolean. Use implicit FTPS. Default: false.
+    rootDirectory: '$(Build.ArtifactStagingDirectory)/_site/' # string. Alias: rootFolder. Required. Root folder. 
+    filePatterns: '**' # string. Required. File patterns. Default: **.
+    remoteDirectory: '/' # string. Alias: remotePath. Required. Remote directory. Default: /upload/$(Build.BuildId)/.
+  # Advanced
+    #enableUtf8: false # boolean. Enable UTF8 support. Default: false.
+    #clean: false # boolean. Delete remote directory. Default: false.
+    #cleanContents: false # boolean. Optional. Use when clean = false. Clear remote directory contents. Default: false.
+    #preservePaths: false # boolean. Preserve file paths. Default: false.
+    #trustSSL: false # boolean. Trust server certificate. Default: false.
+    #customCmds: # string. FTP Commands.
