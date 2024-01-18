@@ -49,7 +49,7 @@ steps:
     filePatterns: '**' # string. Required. File patterns. Default: **.
     remoteDirectory: '/' # string. Alias: remotePath. Required. Remote directory. Default: /upload/$(Build.BuildId)/.
   # Advanced
-    #enableUtf8: false # boolean. Enable UTF8 support. Default: false.
+    #enableUtf8: false # boolean. Enable UTF8 support. Default: false. 
     #clean: false # boolean. Delete remote directory. Default: false.
     #cleanContents: false # boolean. Optional. Use when clean = false. Clear remote directory contents. Default: false.
     #preservePaths: false # boolean. Preserve file paths. Default: false.
