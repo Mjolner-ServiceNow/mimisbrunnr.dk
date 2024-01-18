@@ -30,7 +30,7 @@ steps:
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
 - script: |
-    mv $(Build.ArtifactStagingDirectory)/_site/blog.html $(Build.ArtifactStagingDirectory)/_site/blog/index.html
+    mv $(Build.ArtifactStagingDirectory)/blog.html $(Build.ArtifactStagingDirectory)/blog/index.html
   displayName: 'Rename blog.html to index.html'
 
 - script: |
