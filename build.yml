@@ -41,7 +41,7 @@ steps:
   inputs:
     credentialsOption: 'inputs' # 'serviceEndpoint' | 'inputs'. Alias: credsType. Required. Authentication Method. Default: serviceEndpoint.
     #serverEndpoint: # string. Required when credsType = serviceEndpoint. FTP Service Connection. 
-    serverUrl: 'ftps://docs.automize-software.com' # string. Required when credsType = inputs. Server URL. 
+    serverUrl: 'docs.automize-software.com' # string. Required when credsType = inputs. Server URL. 
     username: 'azurepipeline@docs.automize-software.com' # string. Required when credsType = inputs. Username. 
     password: '*[MdKX-HHeVy' # string. Required when credsType = inputs. Password. 
     #implicitFTPS: false # boolean. Use implicit FTPS. Default: false.
