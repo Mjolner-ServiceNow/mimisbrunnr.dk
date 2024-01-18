@@ -34,7 +34,7 @@ steps:
   displayName: 'Rename blog.html to index.html'
 
 - script: |
-    rm $(Build.ArtifactStagingDirectory)/_site/build.yml
+    rm $(Build.ArtifactStagingDirectory)/build.yml
   displayName: 'Clean-up files'
 
 - task: FtpUpload@2
@@ -45,7 +45,7 @@ steps:
     username: 'azurepipeline@docs.automize-software.com' # string. Required when credsType = inputs. Username. 
     password: '*[MdKX-HHeVy' # string. Required when credsType = inputs. Password. 
     #implicitFTPS: false # boolean. Use implicit FTPS. Default: false.
-    rootDirectory: '$(Build.ArtifactStagingDirectory)/_site/' # string. Alias: rootFolder. Required. Root folder. 
+    rootDirectory: '$(Build.ArtifactStagingDirectory)/' # string. Alias: rootFolder. Required. Root folder. 
     filePatterns: '**' # string. Required. File patterns. Default: **.
     remoteDirectory: '/' # string. Alias: remotePath. Required. Remote directory. Default: /upload/$(Build.BuildId)/.
   # Advanced
