@@ -41,7 +41,7 @@ steps:
   inputs:
     credentialsOption: 'inputs' # 'serviceEndpoint' | 'inputs'. Alias: credsType. Required. Authentication Method. Default: serviceEndpoint.
     #serverEndpoint: # string. Required when credsType = serviceEndpoint. FTP Service Connection. 
-    serverUrl: 'docs.automize-software.com' # string. Required when credsType = inputs. Server URL. 
+    serverUrl: 'ftps://docs.automize-software.com' # string. Required when credsType = inputs. Server URL. 
     username: 'azurepipeline@docs.automize-software.com' # string. Required when credsType = inputs. Username. 
     password: '*[MdKX-HHeVy' # string. Required when credsType = inputs. Password. 
     #implicitFTPS: false # boolean. Use implicit FTPS. Default: false.
@@ -53,5 +53,5 @@ steps:
     #clean: false # boolean. Delete remote directory. Default: false.
     #cleanContents: false # boolean. Optional. Use when clean = false. Clear remote directory contents. Default: false.
     #preservePaths: false # boolean. Preserve file paths. Default: false.
-    #trustSSL: false # boolean. Trust server certificate. Default: false.
+    trustSSL: true # boolean. Trust server certificate. Default: false.
     #customCmds: # string. FTP Commands.
