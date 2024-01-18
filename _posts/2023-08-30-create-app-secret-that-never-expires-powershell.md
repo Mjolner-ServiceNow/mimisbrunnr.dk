@@ -19,10 +19,11 @@ Locate the **Object ID** of your App registration and copy it.
 
 We are ready to create the secret, so fire up your favorite PowerShell editor.
 
-You must have the [Azure Active Directory PowerShell module](https://www.powershellgallery.com/packages/AzureAD/) to be able to create the secret. Run below code to install it, if you don't already have it.
+You must have the [Azure Active Directory PowerShell module](https://www.powershellgallery.com/packages/AzureAD/) and the [Microsoft Graph module](https://www.powershellgallery.com/packages/Microsoft.Graph/) to be able to create the secret. Run below code to install them, if you don't already have them.
 
 ```powershell
 Install-Module -Name AzureAD 
+Install-Module -Name Microsoft.Graph
 ```
 
 Next paste in the following code.
