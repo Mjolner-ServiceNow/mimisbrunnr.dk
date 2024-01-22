@@ -117,4 +117,8 @@ feed:
     children:
       - title: "Customize feedback app"
         url: /feedback-app/customization/
+  - title: "Upgrading"
+    children:
+      - title: "Changelog"
+        url: /feedback-app/changelog/
      
