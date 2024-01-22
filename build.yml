@@ -39,7 +39,7 @@ steps:
     #serverEndpoint: # string. Required when credsType = serviceEndpoint. FTP Service Connection. 
     serverUrl: 'ftps://docs.automize-software.com' # string. Required when credsType = inputs. Server URL. 
     username: 'azurepipeline@docs.automize-software.com' # string. Required when credsType = inputs. Username. 
-    password: '*[MdKX-HHeVy' # string. Required when credsType = inputs. Password. 
+    password: '$(FTP-PASSWORD)' # string. Required when credsType = inputs. Password. 
     #implicitFTPS: false # boolean. Use implicit FTPS. Default: false.
     rootDirectory: '$(Build.ArtifactStagingDirectory)/' # string. Alias: rootFolder. Required. Root folder. 
     filePatterns: '**' # string. Required. File patterns. Default: **.
