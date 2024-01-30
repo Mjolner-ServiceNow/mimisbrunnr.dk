@@ -8,6 +8,22 @@ sidebar:
 toc: true
 ---
 
+## 2.4.3 January 30th, 2024
+
+This update includes three brand new features, that we hope you will enjoy! 🤩
+
+Net Promoter Score (NPS) 📊: Gain deeper insights into user satisfaction with the addition of Net Promoter Score (NPS). This feature empowers you to measure and understand user loyalty, providing invaluable data for strategic decision-making.
+
+Widget Embedding 🔄: Enhance your control and customization options with the ability to embed the Feedback Widget directly onto a page. This feature enables you to include the Feedback widget after a user submits a ticket or directly on any page other of your choosing for maximum flexibility.
+
+Improved Thank You Screen 🎉: We understand the importance of concluding the feedback journey on a positive note. The thank you screen has been refined to provide an improved and engaging user experience, ensuring a positive closure to the feedback submission process.
+
+Now with Domain Separation 🌍: The Feedback App is now ready for MSP environments with full Domain Separation Support. Giving even more ServiceNow customers the opportunity to enjoy the Feedback App.
+
+We've not identified any bugs, so no bugs where removed or harmed during this update. 🐞 Maybe there are none? 🤔
+
+As part of our commitment to continuous improvement, we value your feedback on these new features. Please do not hesitate to reach out to our support team with any questions or suggestions; your input is instrumental in shaping the future of the Feedback App. 🤩
+
 ## 2.3.1 September 15th, 2023
 
 We've identified a pesky bug 🐞 that allowed users to submit feedback records without a rating. This occurred when they initially selected a rating on one page, closed the dialogue, navigated to a new page, and then clicked the feedback button, followed by the send button without selecting a rating 🤯

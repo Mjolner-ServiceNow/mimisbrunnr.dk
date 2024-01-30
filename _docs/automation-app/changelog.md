@@ -8,6 +8,14 @@ sidebar:
 toc: true
 ---
 
+## 3.0.8 January 24th, 2024
+
+🚀 Performance Boost & Bug Fix
+
+We're excited to introduce a performance-enhancing update to Automation App. In this release, we've tackled a potential bug that could lead to infinite throttling during the discovery of module activities. This improvement ensures a smoother, faster, and more reliable experience. ️
+
+Upgrade now for an even better automation experience!
+
 ## 3.0.6 October 11th, 2023
 
 We're thrilled to introduce Automation App Version 3.0, loaded with exciting new features, crucial bug fixes, and some tech upgrades to elevate your automation experience. Here's the lowdown on what's changed:
