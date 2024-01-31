@@ -20,7 +20,7 @@ Improved Thank You Screen 🎉: We understand the importance of concluding the f
 
 Now with Domain Separation 🌍: The Feedback App is now ready for MSP environments with full Domain Separation Support. Giving even more ServiceNow customers the opportunity to enjoy the Feedback App.
 
-We've not identified any bugs, so no bugs where removed or harmed during this update. 🐞 Maybe there are none? 🤔
+We've not identified any bugs, so no bugs were removed or harmed during this update. 🐞 Maybe there are none? 🤔
 
 As part of our commitment to continuous improvement, we value your feedback on these new features. Please do not hesitate to reach out to our support team with any questions or suggestions; your input is instrumental in shaping the future of the Feedback App. 🤩
 
