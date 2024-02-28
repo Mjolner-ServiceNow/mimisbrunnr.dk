@@ -18,7 +18,8 @@ aa:
         url: /automation-app/servicenow-setup/
       - title: "Hybrid Workers"
         url: /automation-app/hybrid-worker/
-
+      - title: "Security Best Practises"
+        url: /automation-app/security/
 
   - title: "Automating"
     children:
