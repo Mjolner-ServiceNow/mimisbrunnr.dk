@@ -3,7 +3,7 @@ layout: single
 title: Automation App Security
 excerpt: "Securing Your Automation App Setup: Best Practices for Connection, Authentication, and Authorization"
 permalink: /automation-app/security/
-last_modified_at: 2023-03-01,T10:10:18-04:00
+last_modified_at: 2024-02-29,T10:10:18-04:00
 sidebar:
   nav: "aa"
 toc: true
@@ -21,7 +21,7 @@ When Automation App communicates with the Microsoft Azure management endpoint, i
 
 ### OCSP: An Extra Layer of Trust
 
-To enhance security, ServiceNow enables Online Certificate Status Protocol (OCSP) by default. OCSP checks the certificate's revocation status, adding an extra layer of security but also introducing a potential point of failure if the OCSP endpoint becomes unresponsive. Balancing the benefits of OCSP against its risks is crucial in maintaining a secure and reliable connection.
+To enhance security, ServiceNow enables Online Certificate Status Protocol (OCSP) by default. OCSP checks the certificate's revocation status, adding an extra layer of security but also introducing a potential point of failure if the OCSP endpoint becomes unresponsive as this will cause ServiceNow to drop the connection. Balancing the benefits of OCSP against its risks is crucial in maintaining a secure and reliable connection.
 
 ## Authentication: Proving Your Identity
 
@@ -29,7 +29,7 @@ Once a secure connection is established, the next step is authentication—provi
 
 ### Option 1: Authenticate Using a Secret
 
-Creating a secret in Microsoft Entra involves one-way encryption, meaning the secret is irreversible. It's crucial to securely store this secret, as Microsoft Entra cannot retrieve it. 
+Creating a secret in Microsoft Entra involves one-way encryption, meaning the secret is irreversible and only presented to you once. It's crucial to securely store this secret, as Microsoft Entra cannot retrieve it. 
 
 Authentication involves sending the secret and Client ID over HTTPS, with Microsoft Entra verifying the secret's integrity. 
 
@@ -55,13 +55,22 @@ With authentication out of the way, authorization determines what actions Automa
 
 ### ServiceNow Roles and Permissions
 
+Automation App comes with following build-in roles that you can assign your ServiceNow users:
+
 - Automation App Reader: Offers read-only access to Runbooks.
 - Automation App User: Allows working with Runbooks and other assets.
 - Automation App Admin: Provides full access, including configuration settings.
 
+Always have in mind that any user in ServiceNow with the **admin** role will be able to obtain any of the above roles.
+
 ### Microsoft Azure: Balancing Functionality and Security
 
-Assigning the Contributor role in Azure offers full functionality but may not always be necessary. Tailoring the Automation App's privileges can mitigate security risks without compromising essential capabilities.
+Assigning the Contributor role in Azure unlocks full functionality but might not always be necessary. Customizing the Automation App's privileges can reduce security risks without sacrificing key capabilities.
+
+For instance, if you want the Automation App to only start jobs on a specific Automation Account, you can achieve this by revoking the Contributor role and assigning only the Automation Operator role to that account.
+
+It's important to note that editing an Automation Runbook can be done using tools other than the Automation App. This can be useful if you prefer not to allow your ServiceNow admins to edit certain Runbooks, or if you want to include team members who are more comfortable working directly in Visual Studio Code or other similar tools they're more accustomed to.
+
 
 ## Making Informed Security Decisions
 
