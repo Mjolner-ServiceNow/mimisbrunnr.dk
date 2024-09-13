@@ -12,7 +12,7 @@ toc: true
 
 🚀 Performance Boost & Bug Fix
 
-We're excited to introduce a performance-enhancing update to Automation App. In this release, we've tackled a potential bug that could lead to infinite throttling during the discovery of module activities. This improvement ensures a smoother, faster, and more reliable experience. ️
+We're excited to introduce a performance-enhancing update to Automation App. In this release, we've tackled a potential bug that could lead to infinite throttling during the discovery of module activities. This improvement ensures a smoother, faster and more reliable experience. ️
 
 Upgrade now for an even better automation experience!
 
