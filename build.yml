@@ -47,7 +47,7 @@ steps:
     remoteDirectory: '/' # string. Alias: remotePath. Required. Remote directory. Default: /upload/$(Build.BuildId)/.
   # Advanced
     #enableUtf8: false # boolean. Enable UTF8 support. Default: false. 
-    #clean: false # boolean. Delete remote directory. Default: false.
+    clean: true # boolean. Delete remote directory. Default: false.
     #cleanContents: true # boolean. Optional. Use when clean = false. Clear remote directory contents. Default: false.
     preservePaths: true # boolean. Preserve file paths. Default: false.
     trustSSL: true # boolean. Trust server certificate. Default: false.
