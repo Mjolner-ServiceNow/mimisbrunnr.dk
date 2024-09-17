@@ -31,6 +31,11 @@ steps:
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
 - script: |
+    apt-get update
+    apt-get upgrade curl
+  displayName: 'Update curl'
+
+- script: |
     mv $(Build.ArtifactStagingDirectory)/blog.html $(Build.ArtifactStagingDirectory)/blog/index.html
   displayName: 'Rename blog.html to index.html'
 
