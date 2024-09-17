@@ -39,6 +39,12 @@ steps:
     mv $(Build.ArtifactStagingDirectory)/blog.html $(Build.ArtifactStagingDirectory)/blog/index.html
   displayName: 'Rename blog.html to index.html'
 
+- script: |
+    curl -T $(Build.ArtifactStagingDirectory)/* ftp://docs.automize-software.com/ --user azurepipeline@docs.automize-software.com:$(FTP-PASSWORD)
+    displayName: 'Upload folder using curl'
+  displayName: 'Upload files'
+  
+
 - task: FtpUpload@2
   inputs:
     credentialsOption: 'inputs' # 'serviceEndpoint' | 'inputs'. Alias: credsType. Required. Authentication Method. Default: serviceEndpoint.
