@@ -4,7 +4,7 @@ title: Properties
 excerpt: "Properties"
 permalink: /feedback-app/properties/
 sidebar:
-  nav: "feed"
+  nav: "fa"
 last_modified_at: 
 toc: false
 ---

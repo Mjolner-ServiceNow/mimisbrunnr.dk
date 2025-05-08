@@ -4,7 +4,7 @@ title: Portal installation guide
 excerpt: "Portal installation guide"
 permalink: /feedback-app/portal/
 sidebar:
-  nav: "feed"
+  nav: "fa"
 last_modified_at: 
 toc: false
 ---

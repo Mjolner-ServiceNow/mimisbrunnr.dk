@@ -1,13 +1,15 @@
 # main links
 main:
-  - title: "Feedback App"
-    url: /feedback-app/
   - title: "Automation App"
     url: /automation-app/
+  - title: "Feedback App"
+    url: /feedback-app/
+  - title: "Integration App"
+    url: /integration-app/
   - title: "Rights Management App"
     url: /rights-management-app/
-  - title: "Blog"
-    url: /blog/
+#  - title: "Blog"
+#    url: /blog/
 
 aa:
   - title: "Initial Setup"
@@ -62,6 +64,60 @@ aa:
       - title: "Microsoft SharePoint"
         url: /automation-app/sharepoint-integration/
 
+fa:
+  - title: "Installation Guide"
+    children:
+      - title: "Single Page"
+        url: /feedback-app/single-page/
+      - title: "Portal Installation"
+        url: /feedback-app/portal/
+      - title: "Properties"
+        url: /feedback-app/properties/
+  - title: "Customization"
+    children:
+      - title: "Customize feedback app"
+        url: /feedback-app/customization/
+  - title: "Upgrading"
+    children:
+      - title: "Changelog"
+        url: /feedback-app/changelog/
+
+ia: 
+  - title: "Basic Setup & Concepts"
+    children:
+      - title: "Service Providers"
+        url: /integration-app/service-provider/
+      - title: "Message Types"
+        url: /integration-app/message/
+      - title: "Message Queue"
+        url: /integration-app/queue/
+      - title: "Field map"
+        url: /integration-app/field-map/
+      - title : "External IDs"
+        url: /integration-app/external-id/
+      - title: "Properties"
+        url: /integration-app/properties/
+      - title: "Logging"
+        url: /integration-app/log/
+  - title: "Inbound integration"
+    children:
+      - title: "Inbound Message"
+        url: /integration-app/inbound-message/
+      - title: "Create Inbound Message API"
+        url: /integration-app/create-message/
+  - title: "Outbound integration"
+    children:
+      - title: "Outbound Message"
+        url: /integration-app/outbound-message/
+      - title: "Outbound Trigger"
+        url: /integration-app/outbound-trigger/
+      - title: "Pull Strategy"
+        url: /integration-app/pull-message/
+  - title: "Upgrading"
+    children:
+      - title: "Changelog"
+        url: /integration-app/changelog/
+
 
 rma:
   - title: "Initial Setup"
@@ -105,21 +161,5 @@ rma:
         url: /rights-management-app/create-aadguestuser/
     
 
-feed:
-  - title: "Installation Guide"
-    children:
-      - title: "Single Page"
-        url: /feedback-app/single-page/
-      - title: "Portal Installation"
-        url: /feedback-app/portal/
-      - title: "Properties"
-        url: /feedback-app/properties/
-  - title: "Customization"
-    children:
-      - title: "Customize feedback app"
-        url: /feedback-app/customization/
-  - title: "Upgrading"
-    children:
-      - title: "Changelog"
-        url: /feedback-app/changelog/
+
      

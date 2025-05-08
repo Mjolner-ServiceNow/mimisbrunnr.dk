@@ -8,6 +8,34 @@ sidebar:
 toc: true
 ---
 
+## 3.0.17 December 3rd, 2024
+
+🚀 Security and stability improvements
+
+We’re excited to announce the latest patch for the Automation App, bringing improved stability and enhanced security. Here’s what’s new:
+
+Error Handling in Azure Management API:
+
+We’ve implemented a robust mechanism to handle unknown errors in the Azure Management API, reducing unexpected disruptions and improving overall automation stability.
+
+Updated Encryption for Secrets and Certificate Keys:
+
+The encryption of secrets and certificate keys has been upgraded to align with ServiceNow’s latest best practices. This ensures stronger protection of sensitive data and compliance with modern security standards.
+
+These changes are part of our ongoing commitment to delivering a reliable and secure experience.
+
+If you have any questions or encounter issues, please don’t hesitate to reach out to the support team.
+
+Thank you for using Automation App!
+
+## 3.0.15 September 18th, 2024
+
+🚀 PowerShell upgrade & Bug Fix
+
+We've removed support for PowerShell 7.1 and replaced it with PowerShell 7.2. We've also fixed a bug that could cause jobs to get stuck in status Activating.
+
+Upgrade now for an even better automation experience!
+
 ## 3.0.8 January 24th, 2024
 
 🚀 Performance Boost & Bug Fix

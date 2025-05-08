@@ -4,7 +4,7 @@ title: Changelog
 permalink: /feedback-app/changelog/
 #last_modified_at: 2022-10-25T08:16:18+01:00
 sidebar:
-  nav: "feed"
+  nav: "fa"
 toc: true
 ---
 

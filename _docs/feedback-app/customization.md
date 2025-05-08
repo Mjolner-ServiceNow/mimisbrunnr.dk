@@ -4,7 +4,7 @@ title: Feedback App Customization
 excerpt: "Feedback App Costumazation"
 permalink: /feedback-app/customization/
 sidebar:
-  nav: "feed"
+  nav: "fa"
 last_modified_at: 
 toc: false
 ---

@@ -1,9 +1,9 @@
 ---
 layout: posts
-title: "Service Now Automation Blog"
+title: "ServiceNow Integration and Automation Blog"
 header:
   overlay_image: /assets/images/header-bg.webp
-excerpt: "Sharing knowledge about automation on the ServiceNow platform"
+excerpt: "Sharing knowledge about integration and automation on the ServiceNow platform"
 sitemap: false
 permalink: /blog
 ---

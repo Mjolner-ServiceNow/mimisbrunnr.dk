@@ -4,7 +4,7 @@ title: Installation guide single page
 excerpt: "Installation guide single page"
 permalink: /feedback-app/single-page/
 sidebar:
-  nav: "feed"
+  nav: "fa"
 last_modified_at: 
 toc: false
 ---

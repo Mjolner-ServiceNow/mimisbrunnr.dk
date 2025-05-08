@@ -130,20 +130,19 @@ author:
       # url: "https://instagram.com/"
 
 # Site Footer
-footer:
-  links:
+
     #- label: "Twitter"
     #  icon: "fab fa-fw fa-twitter-square"
       # url:
     #- label: "Facebook"
     #  icon: "fab fa-fw fa-facebook-square"
       # url:
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: https://www.linkedin.com/showcase/automizesoftware/
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: https://github.com/Automize-Software/
+    #- label: "LinkedIn"
+    #  icon: "fab fa-fw fa-linkedin"
+    #  url: https://www.linkedin.com/showcase/automizesoftware/
+    #- label: "GitHub"
+    #  icon: "fab fa-fw fa-github"
+    #  url: https://github.com/Automize-Software/
     #- label: "GitLab"
     #  icon: "fab fa-fw fa-gitlab"
       # url:
@@ -218,6 +217,17 @@ sass:
   sass_dir: _sass
   style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
+footer:
+  links:
+    - label: "Blog"
+      url: /blog/
+      icon: "fas fa-fw fa-rss-square"
+    - label: "Privacy Policy"
+      url: /privacy-policy/
+      icon: "fas fa-fw fa-user-secret"
+    - label: "Contact Us"
+      url: /contact-us/
+      icon: "fas fa-fw fa-address-card"
 
 # Outputting
 permalink: /:categories/:title/

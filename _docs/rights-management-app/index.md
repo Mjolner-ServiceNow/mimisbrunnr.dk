@@ -9,7 +9,10 @@ sidebar:
 toc: true
 ---
 
-Connect to your Active Directory and Azure Active Directory from your ServiceNow instance and manage all resourses directly from ServiceNow. Control who has access to systems, applications and data resources across your enterprise and enable time limited membership.
+Connect to your Active Directory and Entra ID from your ServiceNow instance and manage all resourses directly from ServiceNow. 
+
+Control who has access to systems, applications and data resources across your enterprise and enable time limited membership.
+
 If your organisation is struggling to follow account permissions given to users and enforce security Rights Management App enables visibility into how users and group memberships are configured, their permissions and roles. With Rights Management App you can limit the access of users and admins with time limited memberships which will reduce risk and highten security.
  
 

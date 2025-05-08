@@ -4,12 +4,10 @@ title: Feedback App
 excerpt: "Feedback App Introduction"
 permalink: /feedback-app/
 sidebar:
-  nav: "feed"
+  nav: "fa"
 last_modified_at: 
 toc: false
 ---
-
-Welcome to Feedback App documentation.
 
 Enable your Service Portal users to quickly give you feedback with this Feedback Widget. The widget is highly customizable and will automatically adapt to your Service Portal theme.
 
