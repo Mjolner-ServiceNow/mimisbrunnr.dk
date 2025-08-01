@@ -2,10 +2,10 @@
 layout: splash
 author_profile: false
 permalink: "/"
-title: "Automize Software Documentation"
+title: "Mimis Brunnr - the well of wisdom"
 header:
   overlay_image: /assets/images/header-bg.webp
-excerpt: "This is the documentation you are looking for"
+excerpt: "Here you will find all the documentation you need for our ServiceNow apps"
 aa_row:
   - image_path: /assets/images/logo-aa-neg.webp
     alt: "Automation App logo"

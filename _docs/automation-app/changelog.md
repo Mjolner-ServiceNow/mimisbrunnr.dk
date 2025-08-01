@@ -8,6 +8,41 @@ sidebar:
 toc: true
 ---
 
+## 3.1.1 June 27th, 2025
+
+A Recipe for Resilience
+
+Ingredients:
+
+1 handful of bugfixes
+2 scoops of performance improvements
+A generous helping of automation magic
+A brand-new feature, freshly baked
+
+Instructions:
+
+Preheat your platform - We’ve optimized the oven! Expect faster performance and smoother workflows across the board.
+Mix in stability - Minor bugs have been sifted out to ensure a lump-free experience.
+Fold in our new secret ingredient:
+You can now automatically create Incidents for specific runbooks when a job fails. Just pick your runbooks, set your preferences, and let the app do the heavy lifting when things go sideways.
+Because automation shouldn’t just run - it should also raise its hand when it falls.
+Bake until golden brown - Let your workflows rise confidently knowing that failures won’t go unnoticed.
+Serving suggestion:
+
+Best enjoyed with proactive monitoring and a sprinkle of Flow Designer triggers. Bon appétit!
+
+# 3.0.19 February 26th, 2025
+
+Resolved an issue where automation accounts with more than 100 runbooks were only importing the first 100 runbooks to ServiceNow. This was due to a change in the Azure Management API that affected pagination. The issue has now been fixed, ensuring all runbooks are correctly discovered.
+
+It is highly recommended to update to this version to ensure that all runbooks in your automation accounts are properly detected and available for use. If you are managing automation accounts with a large number of runbooks, failing to update may result in missing runbooks within the Automation App.
+
+These changes are part of our ongoing commitment to delivering a reliable and secure experience.
+
+If you have any questions or encounter issues, please don’t hesitate to reach out to the support team.
+
+Thank you for using Automation App!
+
 ## 3.0.17 December 3rd, 2024
 
 🚀 Security and stability improvements
