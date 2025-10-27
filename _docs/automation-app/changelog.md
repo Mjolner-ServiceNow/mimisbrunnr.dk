@@ -8,6 +8,18 @@ sidebar:
 toc: true
 ---
 
+## 3.1.4 October 27th, 2025
+
+Great news! 🎉
+
+Automize has been acquired by Mjølner Informatics. This means we now have more than 200 new developer colleagues ready to help us take our apps even further and create even more value for our customers.
+
+In this release, our marketing team has refreshed the app’s icon and logo to reflect the new ownership — a small visual step marking the beginning of an exciting new chapter.
+
+## 3.1.2 August 4th, 2025
+
+Fixed a bug where editing a variable in Runbook Manager returned an error.
+
 ## 3.1.1 June 27th, 2025
 
 A Recipe for Resilience
