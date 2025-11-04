@@ -8,8 +8,6 @@ main:
     url: /integration-app/
   - title: "Rights Management App"
     url: /rights-management-app/
-#  - title: "Blog"
-#    url: /blog/
 
 aa:
   - title: "Initial Setup"
@@ -51,18 +49,12 @@ aa:
 
   - title: "Tutorials"
     children:
-      - title: "Atlassian Jira"
-        url: /automation-app/atlassian-jira-integration/
-      - title: "DocuSign"
-        url: /automation-app/docusign-integration/
       - title: "Microsoft Azure Active Directory"
         url: /automation-app/azure-ad-integration/
       - title: "Microsoft Azure DevOps"
         url: /automation-app/azure-devops-integration/
       - title: "Microsoft Azure Discovery"
         url: /automation-app/azure-discovery/
-      - title: "Microsoft SharePoint"
-        url: /automation-app/sharepoint-integration/
 
 fa:
   - title: "Installation Guide"

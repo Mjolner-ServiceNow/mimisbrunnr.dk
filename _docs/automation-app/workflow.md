@@ -102,4 +102,4 @@ Under "Related Links" you can now click the "Show Workflow" to monitor as the Jo
 
 ![Click on Tenants](/assets/images/x_autps_azure_auto_job_module.png.webp)
 
-To verify that the Job has completed as expected you can also go to "Automize Azure Automation" -> "Jobs" and find the Job in the list. This is also described in the section: Manually start a Runbook
+To verify that the Job has completed as expected you can also go to "Automation App" -> "Jobs" and find the Job in the list. This is also described in the section: Manually start a Runbook

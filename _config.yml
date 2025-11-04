@@ -219,9 +219,6 @@ sass:
 
 footer:
   links:
-    - label: "Blog"
-      url: /blog/
-      icon: "fas fa-fw fa-rss-square"
     - label: "Privacy Policy"
       url: /privacy-policy/
       icon: "fas fa-fw fa-user-secret"
