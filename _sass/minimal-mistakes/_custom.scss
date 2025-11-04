@@ -1,0 +1,25 @@
+.archive__item-teaser {
+  display: flex;
+  margin: 1rem 0;
+}   
+
+.feature__item--right .archive__item-teaser {
+  justify-content: left;
+  
+}
+
+.feature__item--left .archive__item-teaser {
+  justify-content: right;
+}
+
+.archive__item-teaser img {
+  max-width: 180px;
+  height: auto;
+}
+
+@media (max-width: 900px) {
+  .feature__item--left .archive__item-teaser,
+  .feature__item--right .archive__item-teaser {
+    justify-content: center;
+  }
+}
