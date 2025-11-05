@@ -30,7 +30,6 @@ ia_row:
     url: /integration-app
     btn_label: "Learn more"
     btn_class: "btn--inverse"
-    image_width: 200px
 rma_row:
   - image_path: /assets/images/logo-rma-orange.svg
     alt: "Rights Management App logo"
