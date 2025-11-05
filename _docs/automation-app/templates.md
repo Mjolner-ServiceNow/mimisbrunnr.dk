@@ -10,7 +10,7 @@ toc: true
 
 ---
 
-At Automize Software we want to give you the best possible start to your automations. Thus, we have made several templates available for different technologies that you can use free of charge.
+At Mjølner we want to give you the best possible start to your automations. Thus, we have made several templates available for different technologies that you can use free of charge.
 
 With Runbook Manager you have access to this ever-increasing list of Runbook Templates that you can use to fast track your automation project.
 
@@ -65,7 +65,7 @@ If you would like to perform an ad hoc update you can do so by locating the sche
 
 ## Access templates from GitHub
 
-You can also access the templates directly on [GitHub](https://github.com/Automize-Software/AzureRunbooks) if you prefer to get to them this way.
+You can also access the templates directly on [GitHub](https://github.com/Mjolner-ServiceNow/Automation-App-Runbooks) if you prefer to get to them this way.
 
 Remember to stay tuned as we continuously will add new templates to the list based on customer feedback.
 
