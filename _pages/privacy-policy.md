@@ -4,7 +4,6 @@ title: "Privacy Policy"
 header:
   overlay_image: /assets/images/header-bg.webp
 excerpt: "See how Mjølner apps handle your data - securely, transparently, and always under your control."
-sitemap: false
 permalink: /privacy-policy
 ---
 
