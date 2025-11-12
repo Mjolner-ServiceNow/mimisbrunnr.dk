@@ -13,12 +13,13 @@ These properties control key behaviors of the Integration App related to process
 
 ## Retry Attempts
 
-Defines the number of times the Integration App will automatically retry processing a message if it cannot start due to other processes running.  
-**Default value:** `5`
+Defines the number of times the Integration App can retry processing a message. To initiate the retry process, go to the queue record and in the related links (bottom part of the form) click in _Reprocess message_.
+
+- **Default value:** `5` 
 
 ## Debug Mode
 
 A global switch to enable or disable debug logging for Integration App transactions.
 
 - **Yes**: Enables debug logging.
-- **No**: Disables debug logging.
+- **No**: Disables debug logging _(default)_.

@@ -74,8 +74,16 @@ fa:
       - title: "Changelog"
         url: /feedback-app/changelog/
 
-ia: 
-  - title: "Basic Setup & Concepts"
+ia:
+  - title: "Integration App"
+    children:  
+      - title: "Introduction"
+        url: /integration-app/
+      - title: "Installation & Guided Setup"
+        url: /integration-app/setup/
+      - title: "Testing tips"
+        url: /integration-app/test-tips/
+  - title: "Main Concepts"
     children:
       - title: "Service Providers"
         url: /integration-app/service-provider/
