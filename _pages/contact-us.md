@@ -5,7 +5,7 @@ header:
   overlay_image: /assets/images/header-bg.webp
 excerpt: "Need help or have a question about our apps? Contact Mjølner by phone or email - we’re here to support you Monday to Friday, 8:00-17:00 CET/CEST."
 sitemap: false
-permalink: /contact-us
+permalink: /contact-us/
 ---
 
 We're here to help! Whether you have questions about our applications or need general support, feel free to reach out.
