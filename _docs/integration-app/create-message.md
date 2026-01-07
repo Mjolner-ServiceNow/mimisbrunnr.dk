@@ -9,72 +9,45 @@ last_modified_at:
 toc: false
 ---
 
-- **Endpoint**: `/api/x_autps_int_app/integration_app/CreateMessage`  
+- **Endpoint**: `/api/x_autps_int_app/integration_app/message_type/{message_type_id}/message`  
 - **Method**: `POST`
 
 Use this API to send a message to the Integration App for processing.
 
-## Required Fields (in the request body)
+## Setting the Message Type ID
 
-- **payload**  
-  The content to be processed, structured according to the defined message type.
+It is mandatory to include the ID of the Message Type for which you would like to create a message. This is done by entering the **sys_id** of the Inbound Message Type from ServiceNow in the URI. 
 
-- **integrationmode**  
-  Defines how the message should be handled:
-  - `"asynchronous"`: The message is added to the queue for later processing, and a receipt is sent to the Service Provider.
-  - `"synchronous"`: The message is processed immediately, and a response is returned to the Service Provider.
+Here is example: `/api/x_autps_int_app/integration_app/message_type/a32601a383bb6210b37693b5eeaad392/message`  
 
-- **integrationPartner**  
-  The name of the Service Provider sending the message.
+## Optional query parameters
+
+You have the option to include optional query parameters in the URI if you would like.
 
 - **correlation_id**  
   An ID used by the Integration App to look up records in the External IDs table if there is no unique identifier in the field map. It helps determine whether the message should update an existing record or create a new one.
 
 - **external_action**  
-  Identifies the external action to be executed.
+  Identifies the action performed by the external party. This is for information purposes only, and may assist you in trouble-shooting scenarios.
 
 - **external_reference**  
-  Stores an identifier or number from the third-party system (e.g., ticket ID).
+  Stores an identifier or number from the third-party system (e.g., ticket ID). This is for information purposes only, and may assist you in trouble-shooting scenarios.
 
-- **message_type**  
-  The name of the Inbound Message Type that should be triggered.
+Here is an example of the URI including the optional parameters: `/api/x_autps_int_app/integration_app/message_type/a32601a383bb6210b37693b5eeaad392/message?correlation_id=5d3b0b079721ae10b2ddfbf0f053af2d&external_action=update&external_reference=INC00001001`  
 
-## Inbound Create Message Example
+## Payload
 
-Here is a JSON example of an incident that will be processed asynchronous.
+The payload can have any format, but must be specified in either XML or JSON. 
+
+If possible, it is recommended to keep the payload as simple as possible and to only contain the fields that are relevant for the integration. This will help performance, but also make it easier for you, when you work with the field mappings.
+
+Here is an example of a simple payload in JSON for an incident
 
 ```json
 {
-  "payload": {
-    "short_description": "Printer is not working",
-    "urgency": 3,
-    "impact": 3,
-    "number": "INC00001001"
-  },
-  "integrationmode": "asynchronous",
-  "integrationPartner": "Automize",
-  "correlation_id": "5d3b0b079721ae10b2ddfbf0f053af2d",
-  "external_action": "update",
-  "external_reference": "INC00001001",
-  "message_type": "Inbound Automize Incident"
+  "short_description": "Printer is not working",
+  "urgency": 3,
+  "impact": 3,
+  "number": "INC00001001"
 }
-```
-
-Here is the same example, but processed syncronously and submitted as XML.
-
-```xml
-<CreateMessageRequest>
-  <payload>
-    <short_description>Printer is not working</short_description>
-    <urgency>3</urgency>
-    <impact>3</impact>
-    <number>INC00001001</number>
-  </payload>
-  <integrationmode>synchronous</integrationmode>
-  <integrationPartner>Automize</integrationPartner>
-  <correlation_id>5d3b0b079721ae10b2ddfbf0f053af2d</correlation_id>
-  <external_action>update</external_action>
-  <external_reference>INC00001001</external_reference>
-  <message_type>Inbound Automize Incident</message_type>
-</CreateMessageRequest>
 ```
