@@ -18,7 +18,7 @@ Use this API to send a message to the Integration App for processing.
 
 It is mandatory to include the ID of the Message Type for which you would like to create a message. This is done by entering the **sys_id** of the Inbound Message Type from ServiceNow in the URI. 
 
-Here is example: `/api/x_autps_int_app/integration_app/message_type/a32601a383bb6210b37693b5eeaad392/message`  
+Here is an example: `/api/x_autps_int_app/integration_app/message_type/a32601a383bb6210b37693b5eeaad392/message`  
 
 ## Optional query parameters
 
