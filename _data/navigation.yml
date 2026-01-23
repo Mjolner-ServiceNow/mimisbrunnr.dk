@@ -117,6 +117,10 @@ ia:
     children:
       - title: "Changelog"
         url: /integration-app/changelog/
+  - title: "Tutorials"
+    children:
+      - title: "Atlassian Jira Integration"
+        url: /integration-app/atlassian-jira-integration/
 
 
 rma:
