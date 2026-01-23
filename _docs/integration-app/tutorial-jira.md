@@ -88,7 +88,7 @@ In the **Name** field write **Create Jira Issue**.
 
 In the **HTTP method** select **POST**.
 
-Set the **Endpoint** to **https://api.atlassian.com/ex/jira/<CLOUD_ID>/rest/api/3/issue** where you replace ***<CLOUD_ID>*** with the **Cloud ID** that you noted down earlier.
+Set the **Endpoint** to **https://api.atlassian.com/ex/jira/CLOUD_ID/rest/api/3/issue** where you replace ***CLOUD_ID*** with the **Cloud ID** that you noted down earlier.
 
 **Authentication type** should be set to **Inherit from parent**.
 
@@ -174,7 +174,7 @@ Go back to the **HTTP Message** and click the **New** button under **HTTP Method
 
 Set the **Name** to **Update Jira Issue**.
 The **HTTP method** should be set to **PUT**.
-Set the **Endpoint** to **https://api.atlassian.com/ex/jira/<CLOUD_ID>/rest/api/3/issue/${issueId}**. Remember to replace ***<CLOUD_ID>*** with your Cloud ID.
+Set the **Endpoint** to **https://api.atlassian.com/ex/jira/CLOUD_ID/rest/api/3/issue/${issueId}**. Remember to replace ***CLOUD_ID*** with your Cloud ID.
 
 Click the **HTTP Request** tab and insert the following in the **Content** field:
 
@@ -454,9 +454,9 @@ Set **HTTP method** to **POST** and set **Web request body** to **Issue data (Au
 
 Under **Headers** you must add a header with the following values:
 - Key: **Authorization**
-- Value: **Basic** ***<your_base64_string>***
+- Value: **Basic** ***your_base64_string***
 - Hidden: **checked**
 
-Replace ***<your_base64_string>*** with the string you copied from the ***Get Base64 for authentication*** step of this tutorial.
+Replace ***your_base64_string*** with the string you copied from the ***Get Base64 for authentication*** step of this tutorial.
 
 Click on **Validate your request configuration** and then click the **Validate** button. Once clicked you should receive response **200 OK**.
