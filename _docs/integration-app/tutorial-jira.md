@@ -11,7 +11,7 @@ read_time: true
 
 In this guide we will show you how you can use Integration App to setup a bi-directional integration with Atlassian Jira. 
 
-We will keep this guide simple and only focus on Incident integration. This guide should however stil provide you with the knowledge you need to be able to easily expand this to task types etc.
+We will keep this guide simple and only focus on Incident integration. This guide should however still provide you with the knowledge you need to be able to easily expand this to task types etc.
 
 ## Create a user in Atlassian Jira
 
@@ -36,14 +36,14 @@ Confirm that everything looks okay and click **Next**.
 Make sure to copy the **Client ID** and **Client Secret** and then click on **Done**.
 
 ## Setup OAuth Client in ServiceNow
-In ServiceNow navigate to **System OAuth** -> **Applocation Registry** and click the **New** button in the upper right corner.
+In ServiceNow navigate to **System OAuth** -> **Application Registry** and click the **New** button in the upper right corner.
 
 Next select **Connect to a third party OAuth Provider**.
 
 Fill in the following fields:
 - Name: **Atlassian Jira**
 - Client ID: ***The Client ID you copied in the previous step***
-- Client Secret: ***The Client Secret that you coied in the previous step***
+- Client Secret: ***The Client Secret that you copied in the previous step***
 - Default Grant type: **Client Credentials**
 - Token URL: **https://api.atlassian.com/oauth/token**
 - Send Credentials: **In Request Body (Form URL-Encoded)**
@@ -70,12 +70,12 @@ In the **Response** field you should be able to locate a parameter called **id**
 
 This is also referred to as your **Cloud ID**. Make sure to note it down, as we will use it for communicating with Jira going forward.
 
-Click the back button i the upper left corner to get back to the **Rest Message**.
+Click the back button in the upper left corner to get back to the **Rest Message**.
 
 Select the **HTTP Request** section and add the following two
 
 Name: **Accept**
-Value **application/json**
+Value: **application/json**
 
 Name: **Content-Type**
 Value: **application/json**
@@ -88,11 +88,11 @@ In the **Name** field write **Create Jira Issue**.
 
 In the **HTTP method** select **POST**.
 
-Set the **Endpoint** to **https://api.atlassian.com/ex/jira/CLOUD_ID/rest/api/3/issue** where you replace ***CLOUD_ID*** with the **Cloud ID** that you noted down earlier.
+Set the **Endpoint** to **https://api.atlassian.com/ex/jira/<CLOUD_ID>/rest/api/3/issue** where you replace ***<CLOUD_ID>*** with the **Cloud ID** that you noted down earlier.
 
 **Authentication type** should be set to **Inherit from parent**.
 
-Click the **HTTP Request** tab and paste in the follwoing JSON in the **Content** field:
+Click the **HTTP Request** tab and paste in the following JSON in the **Content** field:
 
 ```json
 {
@@ -132,7 +132,7 @@ Warning: In the next step we will create an issue in Jira.
 
 Click the **Test** link under **Related Links** to send a request to Jira.
 
-You should receive a **HTTP status** of **201** and a response containing and ***id***, ***key*** and ***self*** of the newly create issue in Jira.
+You should receive a **HTTP status** of **201** and a response containing an ***id***, ***key*** and ***self*** of the newly created issue in Jira.
 
 Go back to the **HTTP Method** and update the **Content** field, so that it uses variables instead of the hardcoded text we used for testing.
 
@@ -174,7 +174,7 @@ Go back to the **HTTP Message** and click the **New** button under **HTTP Method
 
 Set the **Name** to **Update Jira Issue**.
 The **HTTP method** should be set to **PUT**.
-Set the **Endpoint** to **https://api.atlassian.com/ex/jira/CLOUD_ID/rest/api/3/issue/${issueId}**. Remember to replace ***CLOUD_ID*** with your Cloud ID.
+Set the **Endpoint** to **https://api.atlassian.com/ex/jira/<CLOUD_ID>/rest/api/3/issue/${issueId}**. Remember to replace ***<CLOUD_ID>*** with your Cloud ID.
 
 Click the **HTTP Request** tab and insert the following in the **Content** field:
 
@@ -206,11 +206,11 @@ Click the **HTTP Request** tab and insert the following in the **Content** field
 
 ## Create a user in ServiceNow
 
-The next thing we will do is to create an integration user in ServiceNow. This user should have be created with the following **Internal Integration User** set to **true** and **Identity Type** set to **Machine**.
+The next thing we will do is to create an integration user in ServiceNow. This user should be created with the following **Internal Integration User** set to **true** and **Identity Type** set to **Machine**.
 
 Set a **password** for the user and note down the **User ID** and **password**. Make sure that **Active** is  set to **true** and that **Password needs reset** is set to **false**.
 
-Next assign the role **x_autps_int_app.integration_user** to the newly created user
+Next, assign the role **x_autps_int_app.integration_user** to the newly created user.
 
 ### Get Base64 for authentication
 
@@ -218,7 +218,7 @@ Before we move on to setup the trigger in Jira we need the Base64 of the **UserI
 
 ```echo -n "user_id:password" | base64```
 
-Where ***user_id*** is replace witn **User ID** of the integration user and ***password*** is the ***password*** that you just set for the integration user.
+Where ***user_id*** is replaced with **User ID** of the integration user and ***password*** is the ***password*** that you just set for the integration user.
 
 Remove any trailing equal signs (=) from the base64 encoded string that is returned. Notice that Base64 is not an encryption so keep this string secure.
 
@@ -228,9 +228,9 @@ In ServiceNow go to **Integration App** -> **Service Providers**. Click the **Ne
 
 Set name to **Atlassian Jira** and check the **Active** field. Click **Submit**.
 
-Open the new created **Service Provider** and click on **Edit...** under the **Integration Users** tab at the bottom of the screen.
+Open the newly created **Service Provider** and click on **Edit...** under the **Integration Users** tab at the bottom of the screen.
 
-Select the user that you have just created, by dragger the user to the right column using the arrow buttons.
+Select the user that you have just created, by dragging the user to the right column using the arrow buttons.
 
 Click on **Save**.
 
@@ -248,7 +248,7 @@ Set the following fields:
 In the **Outbound configuration** tab set the following fields:
 - Outbound Type: **Direct REST Call**
 - Distinct Updated: **Checked**
-- Create respone: **Unchecked**
+- Create response: **Unchecked**
 - Payload format: **JSON**
 - REST Message: **Atlassian Jira**
 - REST HTTP Method: **Create Jira Issue**
@@ -263,9 +263,9 @@ Click on **Submit** button to create the Outbound Message Type.
 
 ### Configure Field Map
 
-Open the new created Outbound Message Type record and go to the **Field maps** related list at the bottom of the page.
+Open the newly created Outbound Message Type record and go to the **Field maps** related list at the bottom of the page.
 
-Click the **New** button in the upper right corner of the realted list.
+Click the **New** button in the upper right corner of the related list.
 
 Set the field **Always include in payload** to **Checked**.
 
@@ -326,7 +326,7 @@ Set the following fields:
 - Ignore Service Provider Updates: **Checked**
 - Insert: **Checked**
 - Update: **Checked**
-- Delete: **Uncheked**
+- Delete: **Unchecked**
 
 You then need to decide on a condition. For this tutorial we will trigger when an Incident is assigned to the assignment group **Software**. This is done by setting condition to **Assignment Group**, **is**, **Software**.
 
@@ -348,7 +348,7 @@ Fill in the following fields:
 
 In the **Inbound configuration** tab also set these fields:
 - Payload Format: **JSON**
-- Integration Mode: **Asyncronous**
+- Integration Mode: **Asynchronous**
 
 Right-click on the grey top bar and select **Save**.
 
@@ -356,7 +356,7 @@ Copy the endpoint. You will need this later, when we setup Jira.
 
 ### Setup Inbound Field Maps
 
-Click the **New** button in the upper right corner of the **Field maps** realted list on the Inbound Message Type form.
+Click the **New** button in the upper right corner of the **Field maps** related list on the Inbound Message Type form.
 
 Set the field **Unique Identifier** to **checked**.
 
@@ -417,7 +417,7 @@ Click the **Submit** button.
 
 ## Setting up Atlassian Jira
 
-Go to your Atlassian Jira instance and click on the three dots next to the **Space** you would like integrate to. Select **Space settings**.
+Go to your Atlassian Jira instance and click on the three dots next to the **Space** you would like to integrate to. Select **Space settings**.
 
 In the menu to your left click on **Automation**.
 
@@ -446,7 +446,7 @@ Select the **User condition** and set the following values:
 
 Click on the **Add component** under the if statement and select **THEN: Add an action**
 
-Under **Automation** pick **Send web reqeust**.
+Under **Automation** pick **Send web request**.
 
 In the **Web request URL** insert the **endpoint** that you copied from the **Inbound Message Type** that you created in ServiceNow.
 
@@ -454,9 +454,9 @@ Set **HTTP method** to **POST** and set **Web request body** to **Issue data (Au
 
 Under **Headers** you must add a header with the following values:
 - Key: **Authorization**
-- Value: **Basic** ***your_base64_string***
+- Value: **Basic** ***<your_base64_string>***
 - Hidden: **checked**
 
-Replace ***your_base64_string*** with the string you copied from the ***Get Base64 for authentication*** step of this tutorial.
+Replace ***<your_base64_string>*** with the string you copied from the ***Get Base64 for authentication*** step of this tutorial.
 
 Click on **Validate your request configuration** and then click the **Validate** button. Once clicked you should receive response **200 OK**.
