@@ -292,13 +292,7 @@ Set the field **Always include in payload** to **Checked**.
 In the **Field** tab set the **Use script** to **Checked** and paste the following into the **Field Transform Script** field
 
 ```javascript
-/**
- * The source variable references the current field_map field
- * The current variable references the current record
- * The attachment variable references the attachment if triggered by an attachment. Otherwise it is null
- * The result variable will contain the result of the modification
- **/
-result = (function(source, current, attachment /* empty if not triggered by attachment */ ) {
+result = (function(source, current, attachment) {
   const priority = current.getValue('priority');
 	switch(priority) {
 		case '5':
