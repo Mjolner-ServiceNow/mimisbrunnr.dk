@@ -20,8 +20,9 @@ To configure messages that should be sent to a Service Provider, you must define
 - **Service Provider**  
   Select the Service Providers that should receive (or be allowed to retrieve) this outbound message.
 
-- **Table**  
+- **Target Table**  
   Specify the table containing the records that form the basis for the message.
+  ***Roles required:*** _admin, x_autps_int_app.user_
 
 - **Description**  
   (Optional) Add a description to help other users (or your future self) understand the purpose of the message type.

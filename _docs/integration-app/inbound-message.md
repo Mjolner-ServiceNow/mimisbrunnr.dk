@@ -19,8 +19,9 @@ An **inbound message type** defines the structure of messages your system expect
 - **Service Providers**  
   Select one or more Service Providers that are allowed to send this message type.
 
-- **Table**  
+- **Target Table**  
   Choose the target table in your ServiceNow instance where the message data will be stored or processed.
+  ***Roles required:*** _admin, x_autps_int_app.user_
 
 - **Active**  
   Specify whether the message type should be active.

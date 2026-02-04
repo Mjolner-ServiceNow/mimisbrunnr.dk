@@ -15,3 +15,5 @@ Messages are divided into two types:
 
 - **Inbound Messages**: These are messages received from Service Providers.
 - **Outbound Messages**: These are messages sent to Service Providers.
+
+> Note: to accces the **Target Table** field the following **roles** are required: _admin, x_autps_int_app.user_

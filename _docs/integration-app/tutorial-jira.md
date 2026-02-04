@@ -242,8 +242,10 @@ In the application navigator in ServiceNow go to **Integration App** -> **Messag
 
 Set the following fields:
 - Name: **Outbound Jira Issue**
-- Target Table: **Incident**
+- Target Table: **Incident** 
 - Service Providers: **Atlassian Jira**
+
+> Note: to accces the **Target Table** field the following **roles** are required: _admin, x_autps_int_app.user_
 
 In the **Outbound configuration** tab set the following fields:
 - Outbound Type: **Direct REST Call**
