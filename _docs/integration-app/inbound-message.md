@@ -15,6 +15,7 @@ An **inbound message type** defines the structure of messages your system expect
 
 - **Name**  
   Enter a meaningful name that clearly describes the purpose of the message.
+  > _Note: This name will be shared with the Service Provider, so choose something descriptive and recognizable._
 
 - **Service Providers**  
   Select one or more Service Providers that are allowed to send this message type.
@@ -29,8 +30,20 @@ An **inbound message type** defines the structure of messages your system expect
 - **Description**  
   Provide a clear description to help future users (or yourself) understand the purpose and function of this message type.
 
+- **Endpoint**  
+  Automatically created the correct endpoint for the Inbound Message Type upon creation.
+
 - **Payload Format**  
   Select the expected format of the incoming payload: **JSON** or **XML**.
+
+- **Integration Mode**  
+    Select wether the inbound message should be processed **syncronously** or  **asychronously**.
+
+- **Run Script**  
+  Check true if need to run a script after processing the message (onAfter action).
+
+- **Post Processing Script**  
+  Script to be executed after processing the message.
 
 ## Monitoring
 

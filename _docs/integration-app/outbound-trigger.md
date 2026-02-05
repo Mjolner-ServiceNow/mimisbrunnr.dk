@@ -22,6 +22,9 @@ An **outbound trigger** defines the conditions under which the Integration App s
 - **Service Provider**  
   The Service Provider to which this trigger applies.
 
+- **Ignore Service Provider Updates**   
+  Check true if trigger should ignore updates made by the integration user.
+
 - **Table**  
   The primary table the trigger will monitor. This selection also determines which fields are available for use in the condition.
 
@@ -41,6 +44,15 @@ An **outbound trigger** defines the conditions under which the Integration App s
 
 - **Delete**  
   Check this box if the trigger should fire on **record deletion**.
+
+- **Insert Attachment**  
+  Check this box if the trigger should fire on **attachment creation** linked to the target record.
+
+- **Update Attachment**  
+  Check this box if the trigger should fire on **attachment updates** linked to the target record.
+
+- **Delete Attachment**  
+  Check this box if the trigger should fire on **attachment deletion** linked to the target record.
 
 ## Trigger Conditions
 

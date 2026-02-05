@@ -102,7 +102,10 @@ Choose one of the following methods for message delivery:
 - **Unique ID Path**  
   Define where in the response payload the **unique ID** from the Service Provider can be found:
   - Use **XPath** for XML responses.
-  - Use **dot-walking** for JSON responses.  
+  - Use **dot-walking** for JSON responses. 
+
+- **Update correlation_id**   
+  Check true if the correlation_id field should contain the Unique Identifier value.
 
   The captured ID will be stored in the **External IDs** table and used to identify future updates to external records.
 
