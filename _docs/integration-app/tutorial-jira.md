@@ -51,7 +51,7 @@ Fill in the following fields:
 ## Setup Outbound REST Message
 Go to **System Web Services** -> **Outbound** -> **REST Message** and click the **New** button in the upper right corner.
 
-Fill in the following fields, but replace ***automize*** with the name of your Jira instance:
+Fill in the following fields: 
 - Name: **Atlassian Jira**
 - Accessible from: **All application scopes**
 - Endpoint: **https://api.atlassian.com/oauth/token/accessible-resources**
