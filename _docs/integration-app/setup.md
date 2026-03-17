@@ -53,7 +53,7 @@ This section provides a comprehensive walkthrough of the configuration process f
   
 #### A. Inbound Message Type  
   
-Inbound Message Type will be used in the Integration App API. For that, the Integration Partner/Service Provider must know the endpoint: `api/x_autps_int_app/integration_app/CreateMessage`  
+Inbound Message Type will be used in the Integration App API. For that, the Integration Partner/Service Provider must know the endpoint: `api/x_autps_int_app/integration_app/{message_type}/CreateMessage`  
   
 - **Path:** Integration App > Message Types > Inbound  
 - **Name:** Descriptive name  
@@ -61,6 +61,9 @@ Inbound Message Type will be used in the Integration App API. For that, the Inte
 - **Payload Format:** JSON or XML  
 - **Service Provider:** Lookup from step 1  
 - **Create Incident on Error:** If true, failed inbound creates an incident  
+- **Integration mode:** Asynchronous or Synchronous 
+- **Endpoint**: _created automatically after saving_ 
+- **Run script**: False or True (if any script needs to be executed _onAfter_)
   
 #### B. Outbound Message Type  
   
@@ -76,6 +79,7 @@ Inbound Message Type will be used in the Integration App API. For that, the Inte
 Where request content and endpoints are defined. If integrations with other Integration App ServiceNow environment, go to Integration App > Documentation, and look for chapter Create Inbound Message API.  
   
 - **Unique ID Path:** if defined in the response from the Service Provider/Integration Partner, it means the path to the ID of the related External Record (or correlation ID)  
+- **Update correlation_id:** if External ID is to be added to the correlation_id field of the internal record 
   
 > _(**Best Practice**: Create one message type per target table per integration channel.)_
   
@@ -100,13 +104,14 @@ Scripting supported for custom transformations and/or validations
   
 - **Path:** In the related list of the Outbound Message Type  
 - **Name:** Define Trigger Name  
-- **Table:** Select a target table (the same as the Message Type)  
+- **Table:** Select a target table (the same as the Message Type) 
+- **Ignore Service Provider Updates:** False, or True (if updates done on a response from service provider (_eg. Updating the correlation_id field_) should not trigger the Outbound Message)  
 - **Event:** Insert/Update/Delete  
 - **Message Type:** Choose outbound type from step 2  
 - **Condition:** Glide filter builder  
 - **Script Condition:** For more dynamic filtering and/or validation (must return true/false)  
   
-> _(Every matching event will enqueue a message to the Queue table. For a table different than [task], please create a Business Rule that triggers the integration. Use Business Rule “IntApp Process Outbound Triggers” as reference)_
+> _(Every matching event will enqueue a message to the Queue table. For a table different than [task], please create a Business Rule that triggers the integration, along with adding it to the system property "x_autps_int_app.tables". Use Business Rule “IntApp Process Outbound Triggers” as reference)_
   
 ### Step 5: API Key or OAuth Configuration  
   
@@ -117,5 +122,5 @@ For secure API usage:
 - Store credentials in an API Basic Auth profile or OAuth profile  
 - Link it to REST Message if push method is used  
   
-> _(If it is an automated message (REST or SOAP), the Integration App does NOT work with no authentication. Please ensure that there’s an authentication method configured.)_
+> _(**Best practice:** Authentication is always recommended.)_
  

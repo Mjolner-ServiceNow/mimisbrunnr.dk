@@ -19,7 +19,11 @@ Defines the number of times the Integration App can retry processing a message. 
 
 ## Debug Mode
 
-A global switch to enable or disable debug logging for Integration App transactions.
+A global switch to enable or disable debug logging for Integration App transactions. Is set to **private**.
 
 - **Yes**: Enables debug logging.
 - **No**: Disables debug logging _(default)_.
+
+## Tables
+
+Comma-separated list of tables that can be used with Integration App. Is set to **private** and only editable by **admin**.

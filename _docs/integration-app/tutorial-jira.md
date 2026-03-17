@@ -340,6 +340,11 @@ Login to Jira to verify that the Task was created there as expected.
 
 ## Create an Inbound Message Type in ServiceNow
 
+Start by activating the Inbound Processor engine. 
+- Navigate to **System Definition** -> **Scheduled Jobs**. 
+- Select "**IntApp Inbound processing**".
+- Make sure it is **active**. If not, mark active checkbox as true and save.
+
 In the application navigator in ServiceNow select **Integration App** -> **Message Types** -> **Inbound**. Then click the **New** button in the upper right corner.
 
 Fill in the following fields:
