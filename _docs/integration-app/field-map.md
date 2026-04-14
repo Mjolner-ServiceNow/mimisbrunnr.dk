@@ -46,7 +46,7 @@ For both **inbound** and **outbound** messages, **field maps** are essential. Th
   Use a script to dynamically set the value of the external field.
 
 - **External field name**  
-  Specify the name of the field at the Service Provider.
+  Specify the name of the field at the Service Provider. For inbound REST messages it is also possible to use dot-walking in this field.
 
 ## JSON Options
 
