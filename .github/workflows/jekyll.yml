@@ -22,13 +22,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
 
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages@v5   # ok to stay on v4 if you prefer
+        uses: actions/configure-pages@v6
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
