@@ -12,7 +12,7 @@ We're here to help! Whether you have questions about our applications or need ge
 
 ## 📞 Phone Support
 
-Call us at: **+45 71 71 53 53**  
+Call us at: **+45 70 27 43 43**  
 Available **Monday - Friday, 08:00 to 17:00 CET/CEST**
 
 ## 📧 Email Support
